@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 960" width="1920" height="960">
+  <g stroke="black" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Fuselage -->
+    <path d="M400,480 Q350,460 350,440 Q350,420 400,400 L1300,400 Q1450,400 1450,440 Q1450,480 1300,480 Z"/>
+    <!-- Nose -->
+    <path d="M350,440 Q280,440 300,440"/>
+    <!-- Cockpit windows -->
+    <path d="M380,410 Q400,400 420,410"/>
+    <path d="M430,410 Q445,403 460,410"/>
+    <!-- Windows -->
+    <circle cx="530" cy="440" r="18"/>
+    <circle cx="590" cy="440" r="18"/>
+    <circle cx="650" cy="440" r="18"/>
+    <circle cx="710" cy="440" r="18"/>
+    <circle cx="770" cy="440" r="18"/>
+    <circle cx="830" cy="440" r="18"/>
+    <circle cx="890" cy="440" r="18"/>
+    <circle cx="950" cy="440" r="18"/>
+    <circle cx="1010" cy="440" r="18"/>
+    <circle cx="1070" cy="440" r="18"/>
+    <!-- Door -->
+    <rect x="460" y="410" width="40" height="60" rx="5"/>
+    <!-- Wing -->
+    <path d="M700,480 L550,700 L650,720 L900,480"/>
+    <path d="M700,400 L550,200 L650,180 L900,400"/>
+    <!-- Wing detail -->
+    <line x1="600" y1="650" x2="750" y2="520"/>
+    <line x1="600" y1="250" x2="750" y2="380"/>
+    <!-- Tail fin vertical -->
+    <path d="M1250,400 L1200,250 L1350,250 L1350,400"/>
+    <!-- Tail fin horizontal -->
+    <path d="M1200,400 L1100,340 L1150,330 L1250,400"/>
+    <path d="M1200,480 L1100,540 L1150,550 L1250,480"/>
+    <!-- Engine under wing -->
+    <ellipse cx="750" cy="520" rx="40" ry="20"/>
+    <path d="M710,520 Q700,520 700,530 L700,540"/>
+    <!-- Tail stripe -->
+    <line x1="1100" y1="410" x2="1100" y2="470"/>
+    <!-- Clouds -->
+    <circle cx="200" cy="300" r="45"/>
+    <circle cx="255" cy="285" r="55"/>
+    <circle cx="320" cy="300" r="45"/>
+    <circle cx="1600" cy="350" r="40"/>
+    <circle cx="1650" cy="338" r="48"/>
+    <circle cx="1705" cy="350" r="40"/>
+    <circle cx="1500" cy="550" r="35"/>
+    <circle cx="1545" cy="540" r="42"/>
+    <circle cx="1595" cy="550" r="35"/>
+    <!-- Sun -->
+    <circle cx="1700" cy="130" r="55"/>
+    <line x1="1700" y1="48" x2="1700" y2="28"/>
+    <line x1="1618" y1="130" x2="1598" y2="130"/>
+    <line x1="1782" y1="130" x2="1802" y2="130"/>
+    <line x1="1642" y1="72" x2="1628" y2="58"/>
+    <line x1="1758" y1="72" x2="1772" y2="58"/>
+    <!-- Birds far away -->
+    <path d="M300,600 Q310,590 320,600"/>
+    <path d="M320,600 Q330,590 340,600"/>
+    <path d="M1400,650 Q1408,642 1416,650"/>
+    <path d="M1416,650 Q1424,642 1432,650"/>
+  </g>
+</svg>

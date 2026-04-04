@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 960" width="1920" height="960">
+  <g stroke="black" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Car body -->
+    <path d="M400,550 L400,450 Q400,420 430,420 L700,420 L800,300 L1200,300 L1300,420 L1500,420 Q1530,420 1530,450 L1530,550"/>
+    <!-- Undercarriage -->
+    <path d="M400,550 L550,550"/>
+    <path d="M750,550 L1180,550"/>
+    <path d="M1380,550 L1530,550"/>
+    <!-- Wheels -->
+    <circle cx="650" cy="560" r="70"/>
+    <circle cx="650" cy="560" r="35"/>
+    <circle cx="1280" cy="560" r="70"/>
+    <circle cx="1280" cy="560" r="35"/>
+    <!-- Windshield -->
+    <path d="M800,300 L830,420"/>
+    <!-- Rear window -->
+    <path d="M1200,300 L1170,420"/>
+    <!-- Side windows -->
+    <rect x="850" y="310" width="140" height="100" rx="5"/>
+    <rect x="1010" y="310" width="140" height="100" rx="5"/>
+    <!-- Door line -->
+    <line x1="990" y1="310" x2="990" y2="540"/>
+    <!-- Door handles -->
+    <line x1="940" y1="440" x2="970" y2="440"/>
+    <line x1="1050" y1="440" x2="1080" y2="440"/>
+    <!-- Headlight -->
+    <ellipse cx="1520" cy="460" rx="20" ry="30"/>
+    <!-- Taillight -->
+    <rect x="400" y="445" width="15" height="40" rx="3"/>
+    <!-- Road -->
+    <line x1="100" y1="630" x2="1820" y2="630"/>
+    <line x1="300" y1="660" x2="500" y2="660"/>
+    <line x1="700" y1="660" x2="900" y2="660"/>
+    <line x1="1100" y1="660" x2="1300" y2="660"/>
+    <line x1="1500" y1="660" x2="1700" y2="660"/>
+    <!-- Exhaust -->
+    <path d="M410,540 Q370,530 350,540"/>
+    <circle cx="330" cy="530" r="12"/>
+    <circle cx="300" cy="520" r="8"/>
+    <!-- Cloud -->
+    <circle cx="300" cy="150" r="45"/>
+    <circle cx="355" cy="135" r="55"/>
+    <circle cx="420" cy="150" r="45"/>
+    <!-- Sun -->
+    <circle cx="1600" cy="130" r="60"/>
+    <line x1="1600" y1="40" x2="1600" y2="20"/>
+    <line x1="1510" y1="130" x2="1490" y2="130"/>
+    <line x1="1690" y1="130" x2="1710" y2="130"/>
+    <line x1="1536" y1="66" x2="1522" y2="52"/>
+    <line x1="1664" y1="66" x2="1678" y2="52"/>
+  </g>
+</svg>

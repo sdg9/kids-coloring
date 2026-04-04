@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 960" width="1920" height="960">
+  <g stroke="black" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Main wall -->
+    <rect x="560" y="400" width="800" height="420"/>
+    <!-- Left tower -->
+    <rect x="480" y="250" width="160" height="570"/>
+    <rect x="470" y="230" width="180" height="30"/>
+    <!-- Left tower battlements -->
+    <rect x="470" y="200" width="30" height="30"/>
+    <rect x="520" y="200" width="30" height="30"/>
+    <rect x="570" y="200" width="30" height="30"/>
+    <rect x="620" y="200" width="30" height="30"/>
+    <!-- Right tower -->
+    <rect x="1280" y="250" width="160" height="570"/>
+    <rect x="1270" y="230" width="180" height="30"/>
+    <!-- Right tower battlements -->
+    <rect x="1270" y="200" width="30" height="30"/>
+    <rect x="1320" y="200" width="30" height="30"/>
+    <rect x="1370" y="200" width="30" height="30"/>
+    <rect x="1420" y="200" width="30" height="30"/>
+    <!-- Main battlements -->
+    <rect x="640" y="370" width="40" height="30"/>
+    <rect x="720" y="370" width="40" height="30"/>
+    <rect x="800" y="370" width="40" height="30"/>
+    <rect x="880" y="370" width="40" height="30"/>
+    <rect x="960" y="370" width="40" height="30"/>
+    <rect x="1040" y="370" width="40" height="30"/>
+    <rect x="1120" y="370" width="40" height="30"/>
+    <rect x="1200" y="370" width="40" height="30"/>
+    <!-- Gate -->
+    <path d="M880,820 L880,620 Q960,560 1040,620 L1040,820"/>
+    <!-- Gate details -->
+    <line x1="920" y1="620" x2="920" y2="820"/>
+    <line x1="960" y1="600" x2="960" y2="820"/>
+    <line x1="1000" y1="620" x2="1000" y2="820"/>
+    <line x1="880" y1="680" x2="1040" y2="680"/>
+    <line x1="880" y1="740" x2="1040" y2="740"/>
+    <!-- Windows -->
+    <path d="M660,500 L660,440 Q700,420 740,440 L740,500 Z"/>
+    <path d="M1180,500 L1180,440 Q1220,420 1260,440 L1260,500 Z"/>
+    <circle cx="560" cy="400" r="30"/>
+    <circle cx="1360" cy="400" r="30"/>
+    <!-- Tower windows -->
+    <path d="M530,340 L530,310 Q560,295 590,310 L590,340 Z"/>
+    <path d="M1330,340 L1330,310 Q1360,295 1390,310 L1390,340 Z"/>
+    <!-- Flag poles -->
+    <line x1="560" y1="200" x2="560" y2="120"/>
+    <line x1="1360" y1="200" x2="1360" y2="120"/>
+    <!-- Flags -->
+    <path d="M560,120 L620,145 L560,170"/>
+    <path d="M1360,120 L1420,145 L1360,170"/>
+    <!-- Ground -->
+    <line x1="100" y1="820" x2="1820" y2="820"/>
+    <!-- Moat -->
+    <path d="M200,820 Q400,880 600,820"/>
+    <path d="M1320,820 Q1520,880 1720,820"/>
+    <!-- Clouds -->
+    <circle cx="300" cy="150" r="40"/>
+    <circle cx="350" cy="135" r="50"/>
+    <circle cx="410" cy="150" r="40"/>
+    <circle cx="1550" cy="130" r="35"/>
+    <circle cx="1595" cy="118" r="45"/>
+    <circle cx="1645" cy="130" r="35"/>
+  </g>
+</svg>

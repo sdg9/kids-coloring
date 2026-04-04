@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 960" width="1920" height="960">
+  <g stroke="black" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Body -->
+    <ellipse cx="960" cy="550" rx="300" ry="190"/>
+    <!-- Head -->
+    <circle cx="650" cy="350" r="120"/>
+    <!-- Snout -->
+    <ellipse cx="560" cy="380" rx="60" ry="40"/>
+    <!-- Nose -->
+    <ellipse cx="520" cy="370" rx="18" ry="14"/>
+    <!-- Eye -->
+    <circle cx="670" cy="320" r="20"/>
+    <circle cx="665" cy="316" r="8"/>
+    <!-- Eyebrow -->
+    <path d="M645,295 Q670,280 695,295"/>
+    <!-- Mouth -->
+    <path d="M520,385 Q550,410 590,400"/>
+    <!-- Tongue -->
+    <path d="M555,400 Q560,430 575,430 Q590,430 585,405"/>
+    <!-- Ears -->
+    <path d="M600,260 Q550,180 520,250 Q510,290 560,310"/>
+    <path d="M720,270 Q780,200 790,280 Q790,320 750,330"/>
+    <!-- Front legs -->
+    <path d="M780,700 L780,840"/>
+    <path d="M840,700 L840,840"/>
+    <path d="M900,700 L900,840"/>
+    <path d="M960,700 L960,840"/>
+    <!-- Paws -->
+    <ellipse cx="810" cy="850" rx="40" ry="18"/>
+    <ellipse cx="930" cy="850" rx="40" ry="18"/>
+    <!-- Back legs -->
+    <path d="M1100,680 Q1120,760 1100,840"/>
+    <path d="M1160,680 Q1180,760 1160,840"/>
+    <ellipse cx="1130" cy="850" rx="40" ry="18"/>
+    <!-- Tail -->
+    <path d="M1240,440 Q1350,350 1380,400 Q1400,440 1360,460"/>
+    <!-- Collar -->
+    <path d="M580,430 Q650,470 740,430"/>
+    <!-- Collar tag -->
+    <circle cx="660" cy="460" r="12"/>
+    <!-- Spots on body -->
+    <circle cx="880" cy="500" r="40"/>
+    <circle cx="1050" cy="520" r="35"/>
+    <circle cx="950" cy="620" r="25"/>
+    <!-- Ground -->
+    <line x1="200" y1="868" x2="1720" y2="868"/>
+    <!-- Bone -->
+    <path d="M1450,800 Q1440,785 1450,780 Q1460,775 1470,780 L1530,780 Q1540,775 1550,780 Q1560,785 1550,800 Q1560,815 1550,820 Q1540,825 1530,820 L1470,820 Q1460,825 1450,820 Q1440,815 1450,800 Z"/>
+  </g>
+</svg>
