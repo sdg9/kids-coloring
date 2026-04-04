@@ -1,5 +1,5 @@
 const TOLERANCE = 40;
-const LINE_DARKNESS_THRESHOLD = 80;
+const LINE_DARKNESS_THRESHOLD = 40;
 const DILATE_RADIUS = 3;
 
 export function floodFill(
