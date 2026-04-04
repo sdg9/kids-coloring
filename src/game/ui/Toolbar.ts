@@ -25,7 +25,7 @@ export class Toolbar {
     private static readonly Y = 1080 - 120;
 
     constructor(scene: Scene, callbacks: ToolbarCallbacks) {
-        this.container = scene.add.container(0, Toolbar.Y);
+        this.container = scene.add.container(0, 1080);  // Start off-screen (below viewport)
         this.container.setDepth(100);
 
         // Background bar
@@ -91,6 +91,14 @@ export class Toolbar {
         });
         this.container.add(clearBtn.container);
         this.drawClearIcon(scene, clearBtn.container);
+
+        // Slide toolbar up from bottom
+        scene.tweens.add({
+            targets: this.container,
+            y: Toolbar.Y,
+            duration: 400,
+            ease: 'Back.easeOut',
+        });
     }
 
     private drawUndoIcon(scene: Scene, container: GameObjects.Container): void {
