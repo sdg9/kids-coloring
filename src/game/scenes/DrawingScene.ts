@@ -1,9 +1,10 @@
-import { GameObjects, Scene, Input } from 'phaser';
+import { GameObjects, Scene } from 'phaser';
 import { BrushType, BRUSH_CONFIGS } from '../drawing/BrushConfig';
 import { BrushManager } from '../drawing/BrushManager';
 import { DrawingCanvas } from '../drawing/DrawingCanvas';
 import { COLORING_PAGES } from '../config/coloringPages';
 import { Toolbar } from '../ui/Toolbar';
+import { GamepadNavigator } from '../input/GamepadNavigator';
 
 const CANVAS_HEIGHT = 960;
 
@@ -21,7 +22,7 @@ export class DrawingScene extends Scene {
     private needsRender: boolean = false;
     private cursorGraphics!: GameObjects.Graphics;
     private debugText!: GameObjects.Text;
-    private prevButtonStates: boolean[] = [];
+    private gamepadNav!: GamepadNavigator;
 
     constructor() {
         super('DrawingScene');
@@ -50,7 +51,7 @@ export class DrawingScene extends Scene {
 
         this.canvas = new DrawingCanvas(this, 1920, CANVAS_HEIGHT);
 
-        new Toolbar(this, {
+        const toolbar = new Toolbar(this, {
             initialBrush: this.currentBrush,
             initialColor: this.currentColor,
             onBrushChange: (brush) => {
@@ -90,18 +91,8 @@ export class DrawingScene extends Scene {
         });
         this.debugText.setDepth(500);
 
-        // Phaser gamepad events
-        this.input.gamepad?.on('down', (pad: Input.Gamepad.Gamepad, button: Input.Gamepad.Button, _value: number) => {
-            this.debugText.setText(`Phaser Pad: ${pad.id}\nBtn index: ${button.index}`);
-            if (button.index === 4) this.canvas.undo();
-            else if (button.index === 5) this.canvas.redo();
-        });
-
-        // Browser Gamepad API fallback — poll in update()
-        // Also listen for gamepad connection
-        window.addEventListener('gamepadconnected', (e) => {
-            this.debugText.setText(`Connected: ${e.gamepad.id}\nButtons: ${e.gamepad.buttons.length}`);
-        });
+        // Gamepad navigation (handles all controller input)
+        this.gamepadNav = new GamepadNavigator(this, toolbar, this.canvas, this.debugText);
 
         this.input.on('pointerdown', (pointer: Phaser.Input.Pointer) => {
             if (pointer.y > CANVAS_HEIGHT) return;
@@ -185,30 +176,6 @@ export class DrawingScene extends Scene {
             this.needsRender = false;
         }
 
-        // Browser Gamepad API polling (fallback for when Phaser gamepad events don't fire)
-        const gamepads = navigator.getGamepads();
-        for (const gp of gamepads) {
-            if (!gp) continue;
-
-            // Initialize previous state tracking
-            if (this.prevButtonStates.length === 0) {
-                this.prevButtonStates = gp.buttons.map(() => false);
-            }
-
-            for (let i = 0; i < gp.buttons.length; i++) {
-                const pressed = gp.buttons[i].pressed;
-                const wasPressed = this.prevButtonStates[i] ?? false;
-
-                if (pressed && !wasPressed) {
-                    // Button just pressed
-                    this.debugText.setText(`Pad: ${gp.id}\nBtn index: ${i}\nPressed`);
-
-                    if (i === 4) this.canvas.undo();
-                    else if (i === 5) this.canvas.redo();
-                }
-
-                this.prevButtonStates[i] = pressed;
-            }
-        }
+        this.gamepadNav.update();
     }
 }

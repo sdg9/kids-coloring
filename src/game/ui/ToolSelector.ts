@@ -6,11 +6,15 @@ export class ToolSelector {
     readonly container: GameObjects.Container;
     private buttons: UIButton[] = [];
     private selectedIndex: number = 0;
+    private brushTypes: BrushType[];
+    private onBrushChange: (brush: BrushType) => void;
 
     constructor(scene: Scene, x: number, y: number, onBrushChange: (brush: BrushType) => void, initialBrush?: BrushType) {
+        this.onBrushChange = onBrushChange;
         this.container = scene.add.container(x, y);
 
-        const brushTypes = [BrushType.CRAYON, BrushType.MARKER, BrushType.PENCIL, BrushType.FILL];
+        this.brushTypes = [BrushType.CRAYON, BrushType.MARKER, BrushType.PENCIL, BrushType.FILL];
+        const brushTypes = this.brushTypes;
         const initialIndex = initialBrush !== undefined ? brushTypes.indexOf(initialBrush) : 0;
         this.selectedIndex = initialIndex >= 0 ? initialIndex : 0;
 
@@ -120,5 +124,25 @@ export class ToolSelector {
         this.buttons[this.selectedIndex].setHighlight(false);
         this.selectedIndex = index;
         this.buttons[index].setHighlight(true);
+    }
+
+    selectNext(): void {
+        const next = (this.selectedIndex + 1) % this.brushTypes.length;
+        this.select(next);
+        this.onBrushChange(this.brushTypes[next]);
+    }
+
+    selectPrev(): void {
+        const prev = (this.selectedIndex - 1 + this.brushTypes.length) % this.brushTypes.length;
+        this.select(prev);
+        this.onBrushChange(this.brushTypes[prev]);
+    }
+
+    getCount(): number {
+        return this.brushTypes.length;
+    }
+
+    getSelectedIndex(): number {
+        return this.selectedIndex;
     }
 }

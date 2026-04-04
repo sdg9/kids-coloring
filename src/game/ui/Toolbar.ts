@@ -18,6 +18,9 @@ export interface ToolbarCallbacks {
 
 export class Toolbar {
     readonly container: GameObjects.Container;
+    readonly toolSelector: ToolSelector;
+    readonly colorPalette: ColorPalette;
+    readonly pageSelector: ColoringPageSelector;
     private static readonly HEIGHT = 120;
     private static readonly Y = 1080 - 120;
 
@@ -38,8 +41,8 @@ export class Toolbar {
         this.container.add(divider);
 
         // Tool selector (left side)
-        const toolSelector = new ToolSelector(scene, 80, Toolbar.HEIGHT / 2, callbacks.onBrushChange, callbacks.initialBrush);
-        this.container.add(toolSelector.container);
+        this.toolSelector = new ToolSelector(scene, 80, Toolbar.HEIGHT / 2, callbacks.onBrushChange, callbacks.initialBrush);
+        this.container.add(this.toolSelector.container);
 
         // Undo / Redo buttons
         const undoBtn = new UIButton(scene, 500, Toolbar.HEIGHT / 2, {
@@ -63,17 +66,17 @@ export class Toolbar {
         this.drawRedoIcon(scene, redoBtn.container);
 
         // Color palette (center)
-        const colorPalette = new ColorPalette(scene, 1050, Toolbar.HEIGHT / 2, callbacks.onColorChange, callbacks.initialColor);
-        this.container.add(colorPalette.container);
+        this.colorPalette = new ColorPalette(scene, 1050, Toolbar.HEIGHT / 2, callbacks.onColorChange, callbacks.initialColor);
+        this.container.add(this.colorPalette.container);
 
         // Coloring pages button
-        const pageSelector = new ColoringPageSelector(scene, callbacks.onLoadPage);
+        this.pageSelector = new ColoringPageSelector(scene, callbacks.onLoadPage);
         const pagesBtn = new UIButton(scene, 1710, Toolbar.HEIGHT / 2, {
             width: 100,
             height: 80,
             fillColor: 0x446688,
             fontSize: 18,
-            onPress: () => pageSelector.toggle(),
+            onPress: () => this.pageSelector.toggle(),
         });
         this.container.add(pagesBtn.container);
         this.drawPagesIcon(scene, pagesBtn.container);

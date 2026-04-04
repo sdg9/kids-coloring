@@ -144,6 +144,26 @@ export class ColorPalette {
         }
     }
 
+    selectNext(): void {
+        const total = COLORS.length + 1; // includes wheel
+        const next = (this.selectedIndex + 1) % total;
+        this.select(next);
+    }
+
+    selectPrev(): void {
+        const total = COLORS.length + 1;
+        const prev = (this.selectedIndex - 1 + total) % total;
+        this.select(prev);
+    }
+
+    getCount(): number {
+        return COLORS.length + 1;
+    }
+
+    getSelectedIndex(): number {
+        return this.selectedIndex;
+    }
+
     private toggleWheelOverlay(): void {
         if (this.wheelOverlay) {
             this.hideWheelOverlay();

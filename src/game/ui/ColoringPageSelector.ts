@@ -21,6 +21,9 @@ export class ColoringPageSelector {
     private currentPage: number = 0;
     private totalPages: number;
     private pageText!: GameObjects.Text;
+    private focusIndex: number = 0;
+    private focusGraphics: GameObjects.Graphics | null = null;
+    private cardPositions: { x: number; y: number }[] = [];
 
     constructor(
         private scene: Scene,
@@ -112,6 +115,12 @@ export class ColoringPageSelector {
     private renderPage(): void {
         // Clear previous items
         this.pageContainer.removeAll(true);
+        this.cardPositions = [];
+
+        if (this.focusGraphics) {
+            this.focusGraphics.destroy();
+            this.focusGraphics = null;
+        }
 
         const startIdx = this.currentPage * PER_PAGE;
         const endIdx = Math.min(startIdx + PER_PAGE, COLORING_PAGES.length);
@@ -127,6 +136,7 @@ export class ColoringPageSelector {
             const row = Math.floor(localIdx / COLS);
             const cx = gridStartX + col * (THUMB_W + GAP_X);
             const cy = gridStartY + row * (THUMB_H + GAP_Y + 30);
+            this.cardPositions.push({ x: cx, y: cy });
 
             // Card background
             const card = this.scene.add.graphics();
@@ -225,5 +235,95 @@ export class ColoringPageSelector {
     hide(): void {
         this.visible = false;
         this.container.setVisible(false);
+        if (this.focusGraphics) {
+            this.focusGraphics.destroy();
+            this.focusGraphics = null;
+        }
+    }
+
+    get isOpen(): boolean {
+        return this.visible;
+    }
+
+    private drawFocus(): void {
+        if (this.cardPositions.length === 0) return;
+        if (this.focusIndex >= this.cardPositions.length) {
+            this.focusIndex = this.cardPositions.length - 1;
+        }
+        const pos = this.cardPositions[this.focusIndex];
+
+        if (!this.focusGraphics) {
+            this.focusGraphics = this.scene.add.graphics();
+            this.focusGraphics.setDepth(310);
+        }
+        this.focusGraphics.clear();
+        this.focusGraphics.lineStyle(4, 0x00ccff, 1);
+        this.focusGraphics.strokeRoundedRect(
+            pos.x - THUMB_W / 2 - 4,
+            pos.y - THUMB_H / 2 - 4,
+            THUMB_W + 8,
+            THUMB_H + 8,
+            12
+        );
+    }
+
+    focusRight(): void {
+        const col = this.focusIndex % COLS;
+        if (col < COLS - 1 && this.focusIndex + 1 < this.cardPositions.length) {
+            this.focusIndex++;
+            this.drawFocus();
+        }
+    }
+
+    focusLeft(): void {
+        const col = this.focusIndex % COLS;
+        if (col > 0) {
+            this.focusIndex--;
+            this.drawFocus();
+        }
+    }
+
+    focusDown(): void {
+        const next = this.focusIndex + COLS;
+        if (next < this.cardPositions.length) {
+            this.focusIndex = next;
+            this.drawFocus();
+        }
+    }
+
+    focusUp(): void {
+        const prev = this.focusIndex - COLS;
+        if (prev >= 0) {
+            this.focusIndex = prev;
+            this.drawFocus();
+        }
+    }
+
+    selectFocused(): void {
+        const startIdx = this.currentPage * PER_PAGE;
+        const pageIdx = startIdx + this.focusIndex;
+        if (pageIdx < COLORING_PAGES.length) {
+            this.onSelect(COLORING_PAGES[pageIdx].url);
+            this.hide();
+        }
+    }
+
+    gamepadNextPage(): void {
+        this.nextPage();
+        this.focusIndex = 0;
+        this.drawFocus();
+    }
+
+    gamepadPrevPage(): void {
+        this.prevPage();
+        this.focusIndex = 0;
+        this.drawFocus();
+    }
+
+    showWithFocus(): void {
+        this.show();
+        this.focusIndex = 0;
+        // Defer drawFocus to next frame so the container is visible
+        this.scene.time.delayedCall(0, () => this.drawFocus());
     }
 }
