@@ -32,6 +32,10 @@ export class ColorPalette {
     private customColor: number = 0xff0000;
     private wheelOverlay: GameObjects.Container | null = null;
 
+    get isWheelOpen(): boolean {
+        return this.wheelOverlay !== null;
+    }
+
     constructor(scene: Scene, x: number, y: number, onColorChange: (color: number) => void, initialColor?: number) {
         this.scene = scene;
         this.onColorChange = onColorChange;

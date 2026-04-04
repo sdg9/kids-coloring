@@ -99,6 +99,7 @@ export class DrawingScene extends Scene {
 
         this.input.on('pointerdown', (pointer: Phaser.Input.Pointer) => {
             if (pointer.y > CANVAS_HEIGHT) return;
+            if (toolbar.pageSelector.isOpen || toolbar.colorPalette.isWheelOpen) return;
 
             if (this.currentBrush === BrushType.FILL) {
                 this.canvas.fillAt(pointer.x, pointer.y, this.currentColor);
