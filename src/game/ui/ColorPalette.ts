@@ -242,6 +242,9 @@ export class ColorPalette {
         overlay.setDepth(250);
         this.wheelOverlay = overlay;
 
+        // Track preview color (not committed until confirm)
+        let previewColor = this.customColor;
+
         // Backdrop
         const backdrop = this.scene.add.graphics();
         backdrop.fillStyle(0x000000, 0.5);
@@ -260,17 +263,21 @@ export class ColorPalette {
         panelContainer.setScale(0.85);
         overlay.add(panelContainer);
 
-        // Panel background
+        // Panel background — taller to fit preview + confirm
+        const panelW = 440;
+        const panelH = 520;
         const panel = this.scene.add.graphics();
         panel.fillStyle(0x444444, 0.95);
-        panel.fillRoundedRect(-220, -220, 440, 440, 16);
+        panel.fillRoundedRect(-panelW / 2, -panelH / 2, panelW, panelH, 16);
         panel.lineStyle(2, 0x666666, 1);
-        panel.strokeRoundedRect(-220, -220, 440, 440, 16);
+        panel.strokeRoundedRect(-panelW / 2, -panelH / 2, panelW, panelH, 16);
         panelContainer.add(panel);
 
-        // Color wheel
-        const wheelRadius = 160;
+        // Color wheel — shifted up to make room
+        const wheelY = -30;
+        const wheelRadius = 140;
         const wheelGraphics = this.scene.add.graphics();
+        wheelGraphics.setPosition(0, wheelY);
         const segments = 64;
         const rings = 20;
 
@@ -298,8 +305,8 @@ export class ColorPalette {
         wheelGraphics.fillCircle(0, 0, wheelRadius * 0.15);
         panelContainer.add(wheelGraphics);
 
-        // Brightness strip below wheel
-        const stripY = 185;
+        // Brightness strip
+        const stripY = wheelY + wheelRadius + 16;
         const stripW = 320;
         const stripH = 24;
         const stripGraphics = this.scene.add.graphics();
@@ -314,31 +321,121 @@ export class ColorPalette {
         stripGraphics.strokeRect(-stripW / 2, stripY, stripW, stripH);
         panelContainer.add(stripGraphics);
 
-        // Strip interactive
+        // Preview swatch + confirm button row
+        const bottomY = stripY + stripH + 28;
+        const previewSize = 50;
+
+        // Preview swatch — shows the color you're about to pick
+        const previewSwatch = this.scene.add.graphics();
+        const drawPreview = (color: number) => {
+            previewSwatch.clear();
+            previewSwatch.fillStyle(color, 1);
+            previewSwatch.fillCircle(-60, bottomY, previewSize / 2);
+            previewSwatch.lineStyle(2, 0xffffff, 0.6);
+            previewSwatch.strokeCircle(-60, bottomY, previewSize / 2);
+        };
+        drawPreview(previewColor);
+        panelContainer.add(previewSwatch);
+
+        // "Selected" label
+        const previewLabel = this.scene.add.text(-60, bottomY + previewSize / 2 + 8, 'Preview', {
+            fontSize: '12px',
+            color: '#aaaaaa',
+            fontFamily: 'Arial, sans-serif',
+            align: 'center',
+        });
+        previewLabel.setOrigin(0.5, 0);
+        panelContainer.add(previewLabel);
+
+        // Green confirm button (checkmark)
+        const confirmBtn = this.scene.add.graphics();
+        const confirmSize = 56;
+        confirmBtn.fillStyle(0x44aa44, 1);
+        confirmBtn.fillRoundedRect(
+            60 - confirmSize / 2, bottomY - confirmSize / 2,
+            confirmSize, confirmSize, 12
+        );
+        // Draw checkmark
+        confirmBtn.lineStyle(4, 0xffffff, 1);
+        confirmBtn.beginPath();
+        confirmBtn.moveTo(60 - 14, bottomY);
+        confirmBtn.lineTo(60 - 4, bottomY + 12);
+        confirmBtn.lineTo(60 + 16, bottomY - 10);
+        confirmBtn.strokePath();
+        panelContainer.add(confirmBtn);
+
+        const confirmLabel = this.scene.add.text(60, bottomY + confirmSize / 2 + 8, 'Confirm', {
+            fontSize: '12px',
+            color: '#aaaaaa',
+            fontFamily: 'Arial, sans-serif',
+            align: 'center',
+        });
+        confirmLabel.setOrigin(0.5, 0);
+        panelContainer.add(confirmLabel);
+
+        // Confirm button interactive
+        const confirmHit = new Phaser.Geom.Rectangle(
+            60 - confirmSize / 2, bottomY - confirmSize / 2,
+            confirmSize, confirmSize
+        );
+        confirmBtn.setInteractive(confirmHit, Phaser.Geom.Rectangle.Contains);
+        confirmBtn.on('pointerdown', () => {
+            this.customColor = previewColor;
+            this.onColorChange(this.customColor);
+            this.hideWheelOverlay();
+        });
+        confirmBtn.on('pointerover', () => {
+            confirmBtn.clear();
+            confirmBtn.fillStyle(0x55cc55, 1);
+            confirmBtn.fillRoundedRect(
+                60 - confirmSize / 2, bottomY - confirmSize / 2,
+                confirmSize, confirmSize, 12
+            );
+            confirmBtn.lineStyle(4, 0xffffff, 1);
+            confirmBtn.beginPath();
+            confirmBtn.moveTo(60 - 14, bottomY);
+            confirmBtn.lineTo(60 - 4, bottomY + 12);
+            confirmBtn.lineTo(60 + 16, bottomY - 10);
+            confirmBtn.strokePath();
+        });
+        confirmBtn.on('pointerout', () => {
+            confirmBtn.clear();
+            confirmBtn.fillStyle(0x44aa44, 1);
+            confirmBtn.fillRoundedRect(
+                60 - confirmSize / 2, bottomY - confirmSize / 2,
+                confirmSize, confirmSize, 12
+            );
+            confirmBtn.lineStyle(4, 0xffffff, 1);
+            confirmBtn.beginPath();
+            confirmBtn.moveTo(60 - 14, bottomY);
+            confirmBtn.lineTo(60 - 4, bottomY + 12);
+            confirmBtn.lineTo(60 + 16, bottomY - 10);
+            confirmBtn.strokePath();
+        });
+
+        // Strip interactive — preview only, don't close
         const stripHitArea = new Phaser.Geom.Rectangle(-stripW / 2, stripY, stripW, stripH);
         stripGraphics.setInteractive(stripHitArea, Phaser.Geom.Rectangle.Contains);
         stripGraphics.on('pointerdown', (pointer: Phaser.Input.Pointer) => {
             const localX = pointer.x - 960;
             const l = Math.max(0, Math.min(1, (localX + stripW / 2) / stripW));
-            this.customColor = hslToHex(0, 0, l);
-            this.onColorChange(this.customColor);
-            this.hideWheelOverlay();
+            previewColor = hslToHex(0, 0, l);
+            drawPreview(previewColor);
         });
 
-        // Wheel interactive
+        // Wheel interactive — preview only, don't close
         const wheelHitArea = new Phaser.Geom.Circle(0, 0, wheelRadius);
         wheelGraphics.setInteractive(wheelHitArea, Phaser.Geom.Circle.Contains);
         wheelGraphics.on('pointerdown', (pointer: Phaser.Input.Pointer) => {
             const localX = pointer.x - 960;
-            const localY = pointer.y - 480;
+            const localY = pointer.y - 480 - wheelY;
             const dist = Math.sqrt(localX * localX + localY * localY);
             const angle = Math.atan2(localY, localX);
             const hue = ((angle / (Math.PI * 2)) + 1) % 1;
             const saturation = Math.min(dist / wheelRadius, 1);
             const lightness = 0.3 + 0.2 * saturation;
-            this.customColor = hslToHex(hue, saturation, lightness);
-            this.onColorChange(this.customColor);
-            this.hideWheelOverlay();
+            previewColor = hslToHex(hue, saturation, lightness);
+            drawPreview(previewColor);
         });
 
         // Animate in
