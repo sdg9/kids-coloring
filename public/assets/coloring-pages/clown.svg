@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 960" width="1920" height="960">
+  <g stroke="black" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Big clown hat -->
+    <path d="M860 180 L960 80 L1060 180 Z"/>
+    <circle cx="960" cy="75" r="20"/>
+    <!-- Curly hair left -->
+    <circle cx="820" cy="220" r="40"/>
+    <circle cx="790" cy="260" r="40"/>
+    <circle cx="810" cy="300" r="40"/>
+    <!-- Curly hair right -->
+    <circle cx="1100" cy="220" r="40"/>
+    <circle cx="1130" cy="260" r="40"/>
+    <circle cx="1110" cy="300" r="40"/>
+    <!-- Face -->
+    <ellipse cx="960" cy="300" rx="120" ry="130"/>
+    <!-- Eyes -->
+    <ellipse cx="910" cy="270" rx="25" ry="20"/>
+    <circle cx="910" cy="270" r="8"/>
+    <ellipse cx="1010" cy="270" rx="25" ry="20"/>
+    <circle cx="1010" cy="270" r="8"/>
+    <!-- Eyebrows -->
+    <path d="M885 245 Q910 230 935 245"/>
+    <path d="M985 245 Q1010 230 1035 245"/>
+    <!-- Big round nose -->
+    <circle cx="960" cy="310" r="25"/>
+    <!-- Big smile -->
+    <path d="M900 360 Q960 420 1020 360"/>
+    <path d="M900 360 L1020 360"/>
+    <!-- Cheeks -->
+    <circle cx="870" cy="340" r="18"/>
+    <circle cx="1050" cy="340" r="18"/>
+    <!-- Bow tie -->
+    <path d="M910 430 L870 400 L870 460 Z"/>
+    <path d="M1010 430 L1050 400 L1050 460 Z"/>
+    <circle cx="960" cy="430" r="15"/>
+    <!-- Body / shirt -->
+    <path d="M890 440 L860 620 L1060 620 L1030 440"/>
+    <!-- Buttons on shirt -->
+    <circle cx="960" cy="490" r="10"/>
+    <circle cx="960" cy="540" r="10"/>
+    <circle cx="960" cy="590" r="10"/>
+    <!-- Left arm -->
+    <path d="M860 480 L720 400 L700 380"/>
+    <!-- Right arm -->
+    <path d="M1060 480 L1200 400 L1220 380"/>
+    <!-- Juggling balls -->
+    <circle cx="680" cy="340" r="35"/>
+    <circle cx="960" cy="120" r="35"/>
+    <circle cx="1240" cy="340" r="35"/>
+    <circle cx="780" cy="160" r="35"/>
+    <circle cx="1140" cy="160" r="35"/>
+    <!-- Left hand -->
+    <ellipse cx="700" cy="385" rx="20" ry="15"/>
+    <!-- Right hand -->
+    <ellipse cx="1220" cy="385" rx="20" ry="15"/>
+    <!-- Baggy pants -->
+    <path d="M860 620 L840 760 L960 760 L960 620"/>
+    <path d="M960 620 L960 760 L1080 760 L1060 620"/>
+    <!-- Big left shoe -->
+    <path d="M840 760 L720 800 L720 830 L960 830 L960 760"/>
+    <!-- Big right shoe -->
+    <path d="M960 760 L960 830 L1200 830 L1200 800 L1080 760"/>
+    <!-- Shoe details -->
+    <ellipse cx="750" cy="810" rx="20" ry="15"/>
+    <ellipse cx="1170" cy="810" rx="20" ry="15"/>
+    <!-- Ground line -->
+    <path d="M600 830 L1320 830"/>
+    <!-- Star decorations on shirt -->
+    <path d="M920 510 L925 500 L930 510 L920 505 L930 505 Z"/>
+    <path d="M990 510 L995 500 L1000 510 L990 505 L1000 505 Z"/>
+  </g>
+</svg>

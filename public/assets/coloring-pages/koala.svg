@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 960" width="1920" height="960">
+  <g stroke="black" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Ground -->
+    <path d="M0 850 Q480 830 960 850 Q1440 870 1920 850"/>
+
+    <!-- Eucalyptus tree trunk -->
+    <path d="M900 850 Q880 700 870 500 Q860 300 880 150"/>
+    <path d="M980 850 Q1000 700 1010 500 Q1020 300 1000 150"/>
+
+    <!-- Tree trunk texture -->
+    <path d="M910 800 Q940 790 970 800"/>
+    <path d="M905 700 Q940 690 975 700"/>
+    <path d="M895 600 Q935 590 985 600"/>
+    <path d="M890 400 Q930 390 1000 400"/>
+
+    <!-- Branch left -->
+    <path d="M900 350 Q750 300 600 280"/>
+    <path d="M900 360 Q760 320 620 300"/>
+
+    <!-- Branch right -->
+    <path d="M1000 300 Q1150 250 1300 260"/>
+    <path d="M1000 310 Q1140 265 1280 275"/>
+
+    <!-- Branch top -->
+    <path d="M940 180 Q920 120 880 80"/>
+    <path d="M960 180 Q940 130 910 90"/>
+
+    <!-- Eucalyptus leaves clusters -->
+    <!-- Left branch leaves -->
+    <ellipse cx="620" cy="270" rx="40" ry="15" transform="rotate(-20 620 270)"/>
+    <ellipse cx="660" cy="250" rx="35" ry="12" transform="rotate(-30 660 250)"/>
+    <ellipse cx="700" cy="290" rx="35" ry="12" transform="rotate(10 700 290)"/>
+    <ellipse cx="580" cy="260" rx="35" ry="12" transform="rotate(-10 580 260)"/>
+
+    <!-- Right branch leaves -->
+    <ellipse cx="1250" cy="250" rx="40" ry="15" transform="rotate(15 1250 250)"/>
+    <ellipse cx="1200" cy="240" rx="35" ry="12" transform="rotate(25 1200 240)"/>
+    <ellipse cx="1300" cy="270" rx="35" ry="12" transform="rotate(-10 1300 270)"/>
+    <ellipse cx="1150" cy="270" rx="30" ry="12" transform="rotate(5 1150 270)"/>
+
+    <!-- Top leaves -->
+    <ellipse cx="880" cy="80" rx="35" ry="12" transform="rotate(-40 880 80)"/>
+    <ellipse cx="910" cy="70" rx="30" ry="12" transform="rotate(-20 910 70)"/>
+    <ellipse cx="860" cy="110" rx="30" ry="12" transform="rotate(-60 860 110)"/>
+    <ellipse cx="930" cy="100" rx="30" ry="12" transform="rotate(10 930 100)"/>
+
+    <!-- Koala body - sitting on branch junction -->
+    <!-- Body -->
+    <ellipse cx="950" cy="450" rx="80" ry="90"/>
+
+    <!-- Head -->
+    <circle cx="940" cy="320" r="70"/>
+
+    <!-- Fluffy ears -->
+    <circle cx="875" cy="280" r="35"/>
+    <circle cx="875" cy="280" r="20"/>
+    <circle cx="1005" cy="280" r="35"/>
+    <circle cx="1005" cy="280" r="20"/>
+
+    <!-- Eyes -->
+    <ellipse cx="915" cy="320" rx="14" ry="16"/>
+    <circle cx="915" cy="322" r="7"/>
+    <ellipse cx="965" cy="320" rx="14" ry="16"/>
+    <circle cx="965" cy="322" r="7"/>
+
+    <!-- Big nose -->
+    <ellipse cx="940" cy="350" rx="18" ry="12"/>
+
+    <!-- Mouth -->
+    <path d="M930 365 Q940 375 950 365"/>
+
+    <!-- Arms hugging tree -->
+    <path d="M880 420 Q850 400 870 370 Q880 380 890 400"/>
+    <path d="M1020 420 Q1040 400 1020 370 Q1010 380 1000 400"/>
+
+    <!-- Claws on tree -->
+    <path d="M870 370 L865 360"/>
+    <path d="M870 370 L878 358"/>
+    <path d="M1020 370 L1025 360"/>
+    <path d="M1020 370 L1012 358"/>
+
+    <!-- Legs -->
+    <ellipse cx="900" cy="530" rx="35" ry="20"/>
+    <ellipse cx="1000" cy="530" rx="35" ry="20"/>
+
+    <!-- Second tree in background -->
+    <path d="M300 850 Q290 650 285 450 Q280 300 290 200"/>
+    <path d="M350 850 Q340 650 345 450 Q350 300 340 200"/>
+    <ellipse cx="300" cy="200" rx="60" ry="20" transform="rotate(-10 300 200)"/>
+    <ellipse cx="260" cy="180" rx="40" ry="15" transform="rotate(-30 260 180)"/>
+    <ellipse cx="350" cy="190" rx="40" ry="15" transform="rotate(20 350 190)"/>
+
+    <!-- Another tree -->
+    <path d="M1600 850 Q1590 650 1595 450 Q1600 300 1590 200"/>
+    <path d="M1650 850 Q1660 650 1655 450 Q1650 300 1660 200"/>
+    <ellipse cx="1620" cy="200" rx="55" ry="18" transform="rotate(5 1620 200)"/>
+    <ellipse cx="1580" cy="180" rx="40" ry="15" transform="rotate(-25 1580 180)"/>
+    <ellipse cx="1660" cy="185" rx="40" ry="15" transform="rotate(15 1660 185)"/>
+
+    <!-- Grass tufts -->
+    <path d="M100 850 Q110 820 120 850"/>
+    <path d="M500 850 Q510 825 520 850"/>
+    <path d="M1200 850 Q1210 820 1220 850"/>
+    <path d="M1800 850 Q1810 825 1820 850"/>
+
+    <!-- Cloud -->
+    <path d="M1200 100 Q1200 60 1250 60 Q1265 30 1310 40 Q1340 20 1370 40 Q1410 25 1415 60 Q1445 70 1430 100 Q1440 125 1405 130 Q1390 150 1345 145 Q1315 160 1285 140 Q1245 155 1235 125 Q1195 125 1200 100 Z"/>
+  </g>
+</svg>

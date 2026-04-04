@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 960" width="1920" height="960">
+  <g stroke="black" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Ground -->
+    <path d="M0 800 Q300 780 600 800 Q900 820 1200 795 Q1500 775 1920 800 L1920 960 L0 960 Z"/>
+
+    <!-- Sun -->
+    <circle cx="200" cy="130" r="70"/>
+    <line x1="200" y1="30" x2="200" y2="5"/>
+    <line x1="200" y1="230" x2="200" y2="255"/>
+    <line x1="100" y1="130" x2="75" y2="130"/>
+    <line x1="300" y1="130" x2="325" y2="130"/>
+
+    <!-- Tree left -->
+    <rect x="100" y="480" width="50" height="320" rx="8"/>
+    <ellipse cx="125" cy="430" rx="130" ry="90"/>
+    <line x1="125" y1="430" x2="125" y2="480"/>
+    <line x1="80" y1="450" x2="125" y2="430"/>
+    <line x1="170" y1="450" x2="125" y2="430"/>
+
+    <!-- Tree right -->
+    <rect x="1600" y="520" width="45" height="280" rx="8"/>
+    <ellipse cx="1622" cy="470" rx="110" ry="80"/>
+
+    <!-- Cloud -->
+    <ellipse cx="1200" cy="120" rx="100" ry="45"/>
+    <ellipse cx="1140" cy="130" rx="60" ry="35"/>
+    <ellipse cx="1270" cy="130" rx="65" ry="35"/>
+
+    <!-- Giraffe body -->
+    <ellipse cx="900" cy="620" rx="200" ry="120"/>
+
+    <!-- Giraffe neck -->
+    <path d="M1020 560 Q1040 400 1050 250 Q1055 200 1060 180"/>
+    <path d="M1080 560 Q1100 400 1110 250 Q1115 200 1120 180"/>
+
+    <!-- Giraffe head -->
+    <ellipse cx="1090" cy="150" rx="60" ry="45"/>
+
+    <!-- Giraffe ossicones (horns) -->
+    <line x1="1065" y1="110" x2="1055" y2="75"/>
+    <circle cx="1055" cy="70" r="8"/>
+    <line x1="1115" y1="110" x2="1125" y2="75"/>
+    <circle cx="1125" cy="70" r="8"/>
+
+    <!-- Giraffe ears -->
+    <ellipse cx="1040" cy="130" rx="18" ry="12"/>
+    <ellipse cx="1140" cy="130" rx="18" ry="12"/>
+
+    <!-- Giraffe eyes -->
+    <ellipse cx="1070" cy="145" rx="10" ry="8"/>
+    <circle cx="1072" cy="145" r="4"/>
+    <ellipse cx="1110" cy="145" rx="10" ry="8"/>
+    <circle cx="1108" cy="145" r="4"/>
+
+    <!-- Giraffe nostrils -->
+    <circle cx="1082" cy="172" r="4"/>
+    <circle cx="1098" cy="172" r="4"/>
+
+    <!-- Giraffe mouth -->
+    <path d="M1075 182 Q1090 192 1105 182"/>
+
+    <!-- Giraffe spots on neck -->
+    <ellipse cx="1055" cy="280" rx="18" ry="22"/>
+    <ellipse cx="1095" cy="320" rx="20" ry="18"/>
+    <ellipse cx="1060" cy="370" rx="16" ry="20"/>
+    <ellipse cx="1100" cy="420" rx="18" ry="16"/>
+    <ellipse cx="1055" cy="460" rx="15" ry="18"/>
+    <ellipse cx="1095" cy="500" rx="17" ry="15"/>
+
+    <!-- Giraffe spots on body -->
+    <ellipse cx="820" cy="580" rx="30" ry="25"/>
+    <ellipse cx="900" cy="560" rx="28" ry="22"/>
+    <ellipse cx="970" cy="580" rx="25" ry="28"/>
+    <ellipse cx="850" cy="640" rx="26" ry="22"/>
+    <ellipse cx="940" cy="650" rx="30" ry="20"/>
+    <ellipse cx="780" cy="620" rx="22" ry="25"/>
+    <ellipse cx="1010" cy="630" rx="24" ry="20"/>
+
+    <!-- Giraffe front legs -->
+    <path d="M1000 710 L1010 810 L985 810 L985 790 L1000 790 L1010 710"/>
+    <path d="M1060 700 L1075 810 L1050 810 L1050 790 L1065 790 L1075 700"/>
+
+    <!-- Giraffe back legs -->
+    <path d="M760 710 L750 810 L725 810 L725 790 L745 790 L755 710"/>
+    <path d="M810 715 L805 810 L780 810 L780 790 L800 790 L808 715"/>
+
+    <!-- Giraffe tail -->
+    <path d="M700 590 Q650 560 640 530 Q635 510 650 520 Q660 530 655 550"/>
+
+    <!-- Small flowers on ground -->
+    <circle cx="400" cy="795" r="12"/>
+    <circle cx="400" cy="795" r="4"/>
+    <circle cx="600" cy="805" r="10"/>
+    <circle cx="600" cy="805" r="3"/>
+    <circle cx="1400" cy="790" r="11"/>
+    <circle cx="1400" cy="790" r="4"/>
+
+    <!-- Grass -->
+    <path d="M300" y1="800" d="M300 800 Q310 775 320 800"/>
+    <path d="M500 800 Q510 770 520 800"/>
+    <path d="M1300 795 Q1310 765 1320 795"/>
+    <path d="M1500 790 Q1510 760 1520 790"/>
+  </g>
+</svg>

@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 960" width="1920" height="960">
+  <g stroke="black" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Branch -->
+    <path d="M400 550 Q600 520 800 540 Q1000 560 1200 530 Q1400 500 1550 520"/>
+    <!-- Branch texture -->
+    <path d="M500 535 Q520 530 540 535"/>
+    <path d="M1100 540 Q1120 535 1140 540"/>
+    <!-- Parrot body -->
+    <ellipse cx="900" cy="420" rx="120" ry="150"/>
+    <!-- Head -->
+    <circle cx="950" cy="250" r="75"/>
+    <!-- Eye ring -->
+    <circle cx="980" cy="240" r="25"/>
+    <!-- Eye -->
+    <circle cx="983" cy="238" r="10"/>
+    <circle cx="985" cy="236" r="4"/>
+    <!-- Beak - upper -->
+    <path d="M1020 260 L1080 270 Q1090 260 1080 250 L1025 245"/>
+    <!-- Beak - lower -->
+    <path d="M1025 265 L1060 275 Q1065 285 1055 290 L1025 275"/>
+    <!-- Beak curve/hook -->
+    <path d="M1080 250 Q1095 255 1090 270"/>
+    <!-- Head crest feathers -->
+    <path d="M900 190 L880 130 L910 170"/>
+    <path d="M920 180 L910 110 L940 160"/>
+    <path d="M940 175 L945 100 L965 165"/>
+    <path d="M960 180 L975 115 L985 175"/>
+    <!-- Chest feather pattern -->
+    <path d="M850 350 Q900 340 950 355"/>
+    <path d="M840 390 Q900 380 960 395"/>
+    <path d="M845 430 Q900 420 955 435"/>
+    <!-- Wing -->
+    <path d="M800 340 Q750 400 760 480 Q770 530 820 550 L900 540 Q850 500 840 440 Q830 380 850 340 Z"/>
+    <!-- Wing feather lines -->
+    <path d="M790 400 Q810 420 820 460"/>
+    <path d="M775 440 Q800 460 810 500"/>
+    <path d="M780 480 Q800 500 820 530"/>
+    <!-- Long tail feathers -->
+    <path d="M850 550 Q820 650 780 750 Q770 790 760 830"/>
+    <path d="M880 555 Q860 660 840 760 Q835 800 830 850"/>
+    <path d="M910 555 Q900 670 890 770 Q888 810 885 860"/>
+    <!-- Tail feather tips -->
+    <path d="M760 830 Q750 845 765 850"/>
+    <path d="M830 850 Q820 865 835 870"/>
+    <path d="M885 860 Q875 875 890 878"/>
+    <!-- Feet/claws gripping branch -->
+    <path d="M860 540 L850 555 Q830 560 825 545 L840 535"/>
+    <path d="M860 545 L870 560 Q880 570 890 555 L880 540"/>
+    <path d="M920 535 L910 555 Q895 560 890 545 L905 535"/>
+    <path d="M925 540 L935 560 Q945 565 950 550 L940 535"/>
+    <!-- Tropical flower - left -->
+    <circle cx="500" cy="500" r="15"/>
+    <path d="M500 485 Q520 470 515 485"/>
+    <path d="M515 495 Q535 490 520 505"/>
+    <path d="M510 510 Q520 530 500 520"/>
+    <path d="M490 510 Q475 525 480 505"/>
+    <path d="M485 495 Q465 488 480 485"/>
+    <!-- Tropical flower stem and leaves -->
+    <path d="M500 515 L490 560"/>
+    <path d="M495 540 Q470 530 465 545"/>
+    <path d="M492 555 Q510 545 520 555"/>
+    <!-- Tropical flower - right -->
+    <circle cx="1300" cy="480" r="15"/>
+    <path d="M1300 465 Q1320 450 1315 465"/>
+    <path d="M1315 475 Q1335 470 1320 485"/>
+    <path d="M1310 490 Q1320 510 1300 500"/>
+    <path d="M1290 490 Q1275 505 1280 485"/>
+    <path d="M1285 475 Q1265 468 1280 465"/>
+    <!-- Flower stem and leaves -->
+    <path d="M1300 495 L1310 540"/>
+    <path d="M1305 515 Q1330 510 1330 525"/>
+    <path d="M1308 530 Q1285 525 1282 540"/>
+    <!-- Large tropical leaves -->
+    <path d="M300 600 Q350 500 420 520 Q380 540 340 600 Q320 640 300 600"/>
+    <path d="M300 600 L380 540"/>
+    <path d="M1500 580 Q1550 480 1620 500 Q1580 520 1540 580 Q1520 620 1500 580"/>
+    <path d="M1500 580 L1580 520"/>
+    <!-- Small leaves on branch -->
+    <path d="M620 530 Q640 500 660 530 Q640 520 620 530"/>
+    <path d="M1150 525 Q1170 495 1190 525 Q1170 515 1150 525"/>
+    <!-- Butterfly -->
+    <path d="M1150 300 Q1130 270 1150 250 Q1170 270 1190 250 Q1170 270 1150 300"/>
+    <path d="M1150 300 Q1130 330 1150 350 Q1170 330 1190 350 Q1170 330 1150 300"/>
+    <path d="M1150 260 L1145 240"/>
+    <path d="M1150 260 L1155 240"/>
+  </g>
+</svg>

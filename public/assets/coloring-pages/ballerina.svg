@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 960" width="1920" height="960">
+  <g stroke="black" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Hair bun -->
+    <circle cx="960" cy="100" r="35"/>
+    <!-- Head -->
+    <circle cx="960" cy="170" r="55"/>
+    <!-- Hair on head -->
+    <path d="M910 150 Q920 120 960 115 Q1000 120 1010 150"/>
+    <!-- Eyes -->
+    <ellipse cx="940" cy="165" rx="10" ry="8"/>
+    <circle cx="940" cy="165" r="4"/>
+    <ellipse cx="980" cy="165" rx="10" ry="8"/>
+    <circle cx="980" cy="165" r="4"/>
+    <!-- Eyelashes -->
+    <path d="M930 158 L928 152"/>
+    <path d="M940 156 L940 150"/>
+    <path d="M970 158 L968 152"/>
+    <path d="M980 156 L980 150"/>
+    <!-- Smile -->
+    <path d="M945 190 Q960 205 975 190"/>
+    <!-- Neck -->
+    <path d="M950 225 L950 250"/>
+    <path d="M970 225 L970 250"/>
+    <!-- Body / leotard top -->
+    <path d="M920 250 L910 320 L1010 320 L1000 250 Z"/>
+    <!-- Tutu - layered ruffles -->
+    <path d="M860 320 Q910 300 960 320 Q1010 300 1060 320"/>
+    <path d="M840 340 Q900 315 960 340 Q1020 315 1080 340"/>
+    <path d="M820 360 Q890 330 960 360 Q1030 330 1100 360"/>
+    <path d="M840 380 Q900 355 960 380 Q1020 355 1080 380"/>
+    <!-- Connect tutu sides -->
+    <path d="M860 320 L820 360"/>
+    <path d="M1060 320 L1100 360"/>
+    <path d="M840 340 L840 380"/>
+    <path d="M1080 340 L1080 380"/>
+    <!-- Left arm raised up -->
+    <path d="M920 260 L820 200 L790 160"/>
+    <!-- Left hand -->
+    <ellipse cx="787" cy="155" rx="12" ry="10"/>
+    <!-- Right arm gracefully out -->
+    <path d="M1000 260 L1120 240 L1180 200"/>
+    <!-- Right hand -->
+    <ellipse cx="1183" cy="195" rx="12" ry="10"/>
+    <!-- Left leg extended back -->
+    <path d="M920 380 L840 520 L800 600"/>
+    <!-- Left ballet slipper -->
+    <path d="M800 600 L780 610 L790 620 L810 610 L800 600"/>
+    <!-- Right leg standing -->
+    <path d="M980 380 L970 520 L960 700"/>
+    <!-- Right ballet slipper (en pointe) -->
+    <path d="M950 700 L960 720 L970 700"/>
+    <path d="M945 700 L975 700"/>
+    <!-- Ribbon on left slipper -->
+    <path d="M800 600 Q820 580 830 560"/>
+    <!-- Ribbon on right slipper -->
+    <path d="M960 710 Q975 690 985 670"/>
+    <path d="M960 710 Q945 690 935 670"/>
+    <!-- Stage floor -->
+    <path d="M500 720 L1420 720"/>
+    <path d="M480 720 L440 830"/>
+    <path d="M1440 720 L1480 830"/>
+    <path d="M440 830 L1480 830"/>
+    <!-- Stage curtains left -->
+    <path d="M300 60 Q350 100 320 200 Q380 250 340 350 Q390 400 350 480 Q400 530 360 620 Q400 680 370 760 L370 830"/>
+    <path d="M300 60 L300 830"/>
+    <!-- Stage curtains right -->
+    <path d="M1620 60 Q1570 100 1600 200 Q1540 250 1580 350 Q1530 400 1570 480 Q1520 530 1560 620 Q1520 680 1550 760 L1550 830"/>
+    <path d="M1620 60 L1620 830"/>
+    <!-- Curtain top -->
+    <path d="M300 60 Q960 120 1620 60"/>
+    <!-- Spotlight -->
+    <path d="M960 60 L880 720"/>
+    <path d="M960 60 L1040 720"/>
+    <!-- Small stars around -->
+    <path d="M700 150 L710 130 L720 150 L700 140 L720 140 Z"/>
+    <path d="M1200 180 L1210 160 L1220 180 L1200 170 L1220 170 Z"/>
+    <path d="M650 400 L660 380 L670 400 L650 390 L670 390 Z"/>
+    <path d="M1280 350 L1290 330 L1300 350 L1280 340 L1300 340 Z"/>
+  </g>
+</svg>

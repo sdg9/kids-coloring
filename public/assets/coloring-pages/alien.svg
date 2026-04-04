@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 960" width="1920" height="960">
+  <g stroke="black" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Planet surface / ground -->
+    <path d="M0 750 Q200 700 400 730 Q600 760 800 720 Q1000 680 1200 730 Q1400 760 1600 720 Q1800 700 1920 750 L1920 960 L0 960Z"/>
+    <!-- Craters -->
+    <ellipse cx="300" cy="800" rx="60" ry="20"/>
+    <ellipse cx="800" cy="820" rx="45" ry="15"/>
+    <ellipse cx="1400" cy="790" rx="50" ry="18"/>
+    <ellipse cx="1700" cy="830" rx="35" ry="12"/>
+
+    <!-- Alien body -->
+    <ellipse cx="700" cy="580" rx="90" ry="120"/>
+    <!-- Alien head - big oval -->
+    <ellipse cx="700" cy="380" rx="120" ry="100"/>
+    <!-- Big eyes -->
+    <ellipse cx="660" cy="370" rx="40" ry="45"/>
+    <ellipse cx="740" cy="370" rx="40" ry="45"/>
+    <!-- Pupils -->
+    <circle cx="665" cy="375" r="15"/>
+    <circle cx="745" cy="375" r="15"/>
+    <!-- Smile -->
+    <path d="M670 420 Q700 450 730 420"/>
+    <!-- Antennae -->
+    <path d="M660 285 Q640 230 620 200"/>
+    <circle cx="615" cy="195" r="15"/>
+    <path d="M740 285 Q760 230 780 200"/>
+    <circle cx="785" cy="195" r="15"/>
+
+    <!-- Arms -->
+    <path d="M615 530 Q540 500 480 520 Q460 530 470 550"/>
+    <path d="M470 550 Q460 560 470 570 Q480 575 490 570 Q500 565 495 555"/>
+    <path d="M785 530 Q860 500 920 520 Q940 530 930 550"/>
+    <path d="M930 550 Q940 560 930 570 Q920 575 910 570 Q900 565 905 555"/>
+
+    <!-- Legs -->
+    <path d="M650 690 Q640 730 620 750"/>
+    <ellipse cx="610" cy="760" rx="30" ry="12"/>
+    <path d="M750 690 Q760 730 780 750"/>
+    <ellipse cx="790" cy="760" rx="30" ry="12"/>
+
+    <!-- Spaceship -->
+    <ellipse cx="1400" cy="450" rx="220" ry="60"/>
+    <!-- Dome -->
+    <path d="M1320 450 Q1320 340 1400 320 Q1480 340 1480 450"/>
+    <!-- Dome window -->
+    <ellipse cx="1400" cy="390" rx="40" ry="30"/>
+    <!-- Bottom details -->
+    <path d="M1280 490 L1300 540"/>
+    <path d="M1400 510 L1400 560"/>
+    <path d="M1520 490 L1500 540"/>
+    <!-- Landing lights -->
+    <circle cx="1300" cy="540" r="10"/>
+    <circle cx="1400" cy="560" r="10"/>
+    <circle cx="1500" cy="540" r="10"/>
+    <!-- Landing legs -->
+    <path d="M1300 550 L1260 650"/>
+    <line x1="1240" y1="650" x2="1280" y2="650"/>
+    <path d="M1400 570 L1400 670"/>
+    <line x1="1380" y1="670" x2="1420" y2="670"/>
+    <path d="M1500 550 L1540 650"/>
+    <line x1="1520" y1="650" x2="1560" y2="650"/>
+
+    <!-- Spaceship window lights -->
+    <circle cx="1280" cy="450" r="15"/>
+    <circle cx="1340" cy="450" r="15"/>
+    <circle cx="1460" cy="450" r="15"/>
+    <circle cx="1520" cy="450" r="15"/>
+
+    <!-- Stars -->
+    <path d="M200 100 L208 125 L233 133 L208 141 L200 166 L192 141 L167 133 L192 125Z"/>
+    <path d="M500 200 L506 218 L524 224 L506 230 L500 248 L494 230 L476 224 L494 218Z"/>
+    <path d="M1100 150 L1106 168 L1124 174 L1106 180 L1100 198 L1094 180 L1076 174 L1094 168Z"/>
+    <path d="M1700 100 L1708 125 L1733 133 L1708 141 L1700 166 L1692 141 L1667 133 L1692 125Z"/>
+    <path d="M1800 300 L1805 315 L1820 320 L1805 325 L1800 340 L1795 325 L1780 320 L1795 315Z"/>
+    <path d="M100 400 L105 415 L120 420 L105 425 L100 440 L95 425 L80 420 L95 415Z"/>
+
+    <!-- Small star dots -->
+    <circle cx="350" cy="50" r="3"/>
+    <circle cx="900" cy="80" r="3"/>
+    <circle cx="1300" cy="60" r="3"/>
+    <circle cx="1550" cy="200" r="3"/>
+    <circle cx="50" cy="200" r="3"/>
+    <circle cx="950" cy="250" r="3"/>
+
+    <!-- Distant planet -->
+    <circle cx="1750" cy="550" r="40"/>
+    <line x1="1715" y1="535" x2="1785" y2="535"/>
+    <ellipse cx="1750" cy="550" rx="55" ry="15"/>
+  </g>
+</svg>

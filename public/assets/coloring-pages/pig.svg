@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 960" width="1920" height="960">
+  <g stroke="black" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Ground -->
+    <path d="M0 750 Q400 735 800 750 Q1200 765 1600 740 Q1800 730 1920 750 L1920 960 L0 960 Z"/>
+
+    <!-- Sun -->
+    <circle cx="1650" cy="130" r="70"/>
+    <line x1="1650" y1="30" x2="1650" y2="5"/>
+    <line x1="1650" y1="230" x2="1650" y2="255"/>
+    <line x1="1550" y1="130" x2="1525" y2="130"/>
+    <line x1="1750" y1="130" x2="1775" y2="130"/>
+    <line x1="1580" y1="60" x2="1560" y2="40"/>
+    <line x1="1720" y1="60" x2="1740" y2="40"/>
+    <line x1="1580" y1="200" x2="1560" y2="220"/>
+    <line x1="1720" y1="200" x2="1740" y2="220"/>
+
+    <!-- Farm fence background -->
+    <line x1="100" y1="500" x2="1820" y2="500"/>
+    <line x1="100" y1="540" x2="1820" y2="540"/>
+    <rect x="100" y="475" width="18" height="275" rx="3"/>
+    <rect x="350" y="475" width="18" height="275" rx="3"/>
+    <rect x="600" y="475" width="18" height="275" rx="3"/>
+    <rect x="850" y="475" width="18" height="275" rx="3"/>
+    <rect x="1100" y="475" width="18" height="275" rx="3"/>
+    <rect x="1350" y="475" width="18" height="275" rx="3"/>
+    <rect x="1600" y="475" width="18" height="275" rx="3"/>
+    <rect x="1810" y="475" width="18" height="275" rx="3"/>
+
+    <!-- Cloud -->
+    <ellipse cx="500" cy="100" rx="100" ry="45"/>
+    <ellipse cx="430" cy="110" rx="60" ry="35"/>
+    <ellipse cx="570" cy="110" rx="60" ry="35"/>
+
+    <!-- Mud puddle -->
+    <ellipse cx="850" cy="740" rx="280" ry="50"/>
+    <!-- Mud splatter -->
+    <ellipse cx="620" cy="720" rx="30" ry="15"/>
+    <ellipse cx="1080" cy="725" rx="25" ry="12"/>
+    <circle cx="700" cy="700" r="10"/>
+    <circle cx="1010" cy="705" r="12"/>
+
+    <!-- Pig body in mud -->
+    <ellipse cx="850" cy="640" rx="180" ry="110"/>
+
+    <!-- Pig belly -->
+    <ellipse cx="850" cy="660" rx="120" ry="70"/>
+
+    <!-- Pig front legs -->
+    <path d="M960 720 L975 755 L950 755 L950 740 L965 740 L975 720"/>
+    <path d="M1000 700 L1020 750 L995 750 L995 735 L1010 735 L1020 700"/>
+    <!-- Pig front hooves -->
+    <path d="M950 753 L975 753 L965 765 L960 765 Z"/>
+    <path d="M995 748 L1020 748 L1010 760 L1005 760 Z"/>
+
+    <!-- Pig back legs -->
+    <path d="M720 720 L705 755 L680 755 L680 740 L700 740 L710 720"/>
+    <path d="M680 710 L660 750 L635 750 L635 735 L655 735 L665 710"/>
+    <!-- Pig back hooves -->
+    <path d="M680 753 L705 753 L695 765 L690 765 Z"/>
+    <path d="M635 748 L660 748 L650 760 L645 760 Z"/>
+
+    <!-- Pig head -->
+    <ellipse cx="1050" cy="560" rx="90" ry="80"/>
+
+    <!-- Pig snout -->
+    <ellipse cx="1120" cy="570" rx="40" ry="30"/>
+    <circle cx="1110" cy="568" r="6"/>
+    <circle cx="1130" cy="568" r="6"/>
+
+    <!-- Pig eyes -->
+    <ellipse cx="1025" cy="540" rx="14" ry="12"/>
+    <circle cx="1027" cy="540" r="6"/>
+    <ellipse cx="1075" cy="535" rx="14" ry="12"/>
+    <circle cx="1073" cy="535" r="6"/>
+
+    <!-- Pig ears -->
+    <path d="M990 500 Q970 450 990 430 Q1010 420 1020 450 Q1025 470 1010 500"/>
+    <path d="M1070 490 Q1080 440 1100 425 Q1120 418 1120 445 Q1118 465 1095 490"/>
+
+    <!-- Pig mouth (smile) -->
+    <path d="M1100 595 Q1120 610 1140 600"/>
+
+    <!-- Pig curly tail -->
+    <path d="M670 580 Q630 560 625 540 Q622 520 640 530 Q650 540 645 555 Q640 570 660 580"/>
+
+    <!-- Mud drops on pig -->
+    <circle cx="900" cy="580" r="8"/>
+    <circle cx="780" cy="610" r="6"/>
+    <circle cx="950" cy="650" r="7"/>
+
+    <!-- Birds in sky -->
+    <path d="M300 200 Q310 190 320 200 Q330 190 340 200"/>
+    <path d="M1200 150 Q1210 140 1220 150 Q1230 140 1240 150"/>
+
+    <!-- Flowers near fence -->
+    <circle cx="200" cy="740" r="14"/>
+    <circle cx="200" cy="740" r="5"/>
+    <line x1="200" y1="754" x2="200" y2="785"/>
+    <path d="M190 770 L180 760"/>
+    <path d="M210 770 L220 760"/>
+
+    <circle cx="1500" cy="735" r="12"/>
+    <circle cx="1500" cy="735" r="4"/>
+    <line x1="1500" y1="747" x2="1500" y2="775"/>
+
+    <!-- Butterfly -->
+    <path d="M1300 400 Q1280 380 1290 360 Q1300 350 1310 365 Q1315 375 1300 400"/>
+    <path d="M1300 400 Q1320 380 1310 360 Q1300 350 1290 365"/>
+  </g>
+</svg>

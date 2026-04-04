@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 960" width="1920" height="960">
+  <g stroke="black" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Truck body main -->
+    <rect x="300" y="380" width="1100" height="300" rx="10"/>
+    <!-- Cab -->
+    <path d="M1400 380 L1400 300 Q1400 280 1420 280 L1580 280 Q1600 280 1600 300 L1600 680 L1400 680"/>
+    <!-- Cab windshield -->
+    <path d="M1420 300 L1560 300 L1560 420 L1420 420 Z"/>
+    <!-- Windshield divider -->
+    <line x1="1490" y1="300" x2="1490" y2="420"/>
+    <!-- Cab door -->
+    <rect x="1430" y="440" width="120" height="200" rx="5"/>
+    <!-- Door handle -->
+    <line x1="1445" y1="540" x2="1475" y2="540"/>
+    <!-- Headlight -->
+    <circle cx="1590" cy="500" r="25"/>
+    <!-- Bumper -->
+    <rect x="1600" y="600" width="40" height="80" rx="5"/>
+    <!-- Rear bumper -->
+    <rect x="270" y="600" width="30" height="80" rx="5"/>
+    <!-- Truck side panels -->
+    <rect x="340" y="420" width="300" height="220" rx="5"/>
+    <rect x="680" y="420" width="300" height="220" rx="5"/>
+    <rect x="1020" y="420" width="340" height="220" rx="5"/>
+    <!-- Equipment compartment doors -->
+    <line x1="490" y1="420" x2="490" y2="640"/>
+    <line x1="830" y1="420" x2="830" y2="640"/>
+    <!-- Compartment handles -->
+    <circle cx="420" cy="530" r="8"/>
+    <circle cx="560" cy="530" r="8"/>
+    <circle cx="755" cy="530" r="8"/>
+    <circle cx="905" cy="530" r="8"/>
+    <!-- Ladder on top -->
+    <rect x="400" y="340" width="900" height="40" rx="3"/>
+    <!-- Ladder rungs -->
+    <line x1="470" y1="340" x2="470" y2="380"/>
+    <line x1="540" y1="340" x2="540" y2="380"/>
+    <line x1="610" y1="340" x2="610" y2="380"/>
+    <line x1="680" y1="340" x2="680" y2="380"/>
+    <line x1="750" y1="340" x2="750" y2="380"/>
+    <line x1="820" y1="340" x2="820" y2="380"/>
+    <line x1="890" y1="340" x2="890" y2="380"/>
+    <line x1="960" y1="340" x2="960" y2="380"/>
+    <line x1="1030" y1="340" x2="1030" y2="380"/>
+    <line x1="1100" y1="340" x2="1100" y2="380"/>
+    <line x1="1170" y1="340" x2="1170" y2="380"/>
+    <line x1="1240" y1="340" x2="1240" y2="380"/>
+    <!-- Siren light on cab -->
+    <path d="M1470 260 Q1490 230 1510 260"/>
+    <rect x="1470" y="260" width="40" height="20" rx="5"/>
+    <!-- Front wheel -->
+    <circle cx="1500" cy="720" r="70"/>
+    <circle cx="1500" cy="720" r="40"/>
+    <circle cx="1500" cy="720" r="10"/>
+    <!-- Wheel spokes -->
+    <line x1="1500" y1="680" x2="1500" y2="700"/>
+    <line x1="1500" y1="740" x2="1500" y2="760"/>
+    <line x1="1460" y1="720" x2="1480" y2="720"/>
+    <line x1="1520" y1="720" x2="1540" y2="720"/>
+    <!-- Rear wheel 1 -->
+    <circle cx="500" cy="720" r="70"/>
+    <circle cx="500" cy="720" r="40"/>
+    <circle cx="500" cy="720" r="10"/>
+    <line x1="500" y1="680" x2="500" y2="700"/>
+    <line x1="500" y1="740" x2="500" y2="760"/>
+    <line x1="460" y1="720" x2="480" y2="720"/>
+    <line x1="520" y1="720" x2="540" y2="720"/>
+    <!-- Rear wheel 2 -->
+    <circle cx="700" cy="720" r="70"/>
+    <circle cx="700" cy="720" r="40"/>
+    <circle cx="700" cy="720" r="10"/>
+    <line x1="700" y1="680" x2="700" y2="700"/>
+    <line x1="700" y1="740" x2="700" y2="760"/>
+    <line x1="660" y1="720" x2="680" y2="720"/>
+    <line x1="720" y1="720" x2="740" y2="720"/>
+    <!-- Wheel fenders -->
+    <path d="M400 680 Q500 620 600 680"/>
+    <path d="M600 680 Q700 620 800 680"/>
+    <path d="M1400 680 Q1500 620 1600 680"/>
+    <!-- Hose reel in compartment -->
+    <circle cx="1190" cy="540" r="60"/>
+    <circle cx="1190" cy="540" r="40"/>
+    <circle cx="1190" cy="540" r="20"/>
+    <!-- Fire hydrant on right -->
+    <path d="M1750 750 L1750 650 L1720 650 L1720 620 L1780 620 L1780 650 L1750 650"/>
+    <rect x="1720" y="610" width="60" height="15" rx="3"/>
+    <rect x="1730" y="750" width="40" height="30" rx="5"/>
+    <!-- Hydrant outlets -->
+    <path d="M1720 660 L1700 660 L1700 680 L1720 680"/>
+    <path d="M1780 660 L1800 660 L1800 680 L1780 680"/>
+    <!-- Hydrant cap -->
+    <path d="M1735 610 L1740 590 L1760 590 L1765 610"/>
+    <!-- Ground line -->
+    <line x1="100" y1="790" x2="1850" y2="790"/>
+    <!-- Number 911 on side -->
+    <!-- Stripe on truck -->
+    <line x1="300" y1="500" x2="1400" y2="500"/>
+    <line x1="300" y1="510" x2="1400" y2="510"/>
+  </g>
+</svg>

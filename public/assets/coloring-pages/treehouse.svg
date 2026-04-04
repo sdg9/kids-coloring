@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 960" width="1920" height="960">
+  <g stroke="black" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Tree trunk -->
+    <path d="M880 400 L860 900"/>
+    <path d="M1040 400 L1060 900"/>
+    <!-- Trunk texture -->
+    <path d="M900 500 Q940 510 1020 500"/>
+    <path d="M890 600 Q950 615 1040 600"/>
+    <path d="M880 700 Q940 715 1050 700"/>
+    <path d="M875 800 Q945 815 1055 800"/>
+    <!-- Tree roots -->
+    <path d="M860 900 L780 920 L760 940"/>
+    <path d="M860 900 L830 940"/>
+    <path d="M1060 900 L1140 920 L1160 940"/>
+    <path d="M1060 900 L1090 940"/>
+    <!-- Big tree canopy - left -->
+    <path d="M500 300 Q520 220 600 200 Q650 140 740 160 Q780 100 860 130 Q920 80 980 120"/>
+    <!-- Big tree canopy - right -->
+    <path d="M980 120 Q1040 80 1100 130 Q1160 100 1220 160 Q1300 140 1340 200 Q1420 220 1440 300"/>
+    <!-- Lower canopy -->
+    <path d="M500 300 Q480 360 540 380 Q520 420 580 430 Q570 460 620 460"/>
+    <path d="M1440 300 Q1460 360 1400 380 Q1420 420 1360 430 Q1370 460 1320 460"/>
+    <!-- Connect canopy bottom -->
+    <path d="M620 460 Q680 480 740 450"/>
+    <path d="M1180 450 Q1250 480 1320 460"/>
+    <!-- Treehouse platform -->
+    <path d="M700 400 L1220 400 L1240 420 L680 420 Z"/>
+    <!-- Treehouse walls -->
+    <path d="M740 400 L740 250"/>
+    <path d="M1180 400 L1180 250"/>
+    <!-- Treehouse roof -->
+    <path d="M700 250 L960 150 L1220 250 L700 250"/>
+    <!-- Window on roof -->
+    <circle cx="960" cy="210" r="20"/>
+    <path d="M960 190 L960 230"/>
+    <path d="M940 210 L980 210"/>
+    <!-- Door -->
+    <rect x="920" y="300" width="60" height="100"/>
+    <circle cx="970" cy="355" r="6"/>
+    <!-- Window left -->
+    <rect x="780" y="290" width="50" height="50"/>
+    <path d="M805 290 L805 340"/>
+    <path d="M780 315 L830 315"/>
+    <!-- Window right -->
+    <rect x="1080" y="290" width="50" height="50"/>
+    <path d="M1105 290 L1105 340"/>
+    <path d="M1080 315 L1130 315"/>
+    <!-- Flower box under right window -->
+    <rect x="1075" y="340" width="60" height="15"/>
+    <circle cx="1090" cy="335" r="8"/>
+    <circle cx="1105" cy="332" r="8"/>
+    <circle cx="1120" cy="335" r="8"/>
+    <!-- Ladder -->
+    <path d="M1180 420 L1250 750"/>
+    <path d="M1220 420 L1290 750"/>
+    <path d="M1190 480 L1230 480"/>
+    <path d="M1200 540 L1240 540"/>
+    <path d="M1210 600 L1250 600"/>
+    <path d="M1220 660 L1260 660"/>
+    <path d="M1230 720 L1270 720"/>
+    <!-- Swing from branch -->
+    <path d="M600 300 L580 650"/>
+    <path d="M680 300 L700 650"/>
+    <!-- Swing seat -->
+    <path d="M570 650 L710 650 L710 665 L570 665 Z"/>
+    <!-- Rope details on swing -->
+    <path d="M580 650 L580 665"/>
+    <path d="M700 650 L700 665"/>
+    <!-- Bird on roof -->
+    <path d="M1100 170 Q1110 155 1120 170"/>
+    <path d="M1100 170 Q1110 180 1120 170"/>
+    <circle cx="1123" cy="166" r="3"/>
+    <path d="M1126 168 L1135 166"/>
+    <!-- Ground -->
+    <path d="M200 900 L1700 900"/>
+    <!-- Grass tufts -->
+    <path d="M300 900 Q310 880 320 900"/>
+    <path d="M500 900 Q510 875 520 900"/>
+    <path d="M1400 900 Q1410 880 1420 900"/>
+    <path d="M1550 900 Q1560 878 1570 900"/>
+    <!-- Small bush left -->
+    <path d="M350 900 Q370 850 400 860 Q430 840 460 860 Q490 850 500 900"/>
+    <!-- Small bush right -->
+    <path d="M1400 900 Q1420 860 1450 870 Q1480 850 1510 870 Q1530 860 1540 900"/>
+    <!-- Tire swing rope from left branch -->
+    <path d="M520 340 L480 550"/>
+    <!-- Tire -->
+    <ellipse cx="480" cy="580" rx="35" ry="25"/>
+    <ellipse cx="480" cy="580" rx="15" ry="10"/>
+  </g>
+</svg>

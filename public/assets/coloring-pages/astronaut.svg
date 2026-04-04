@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 960" width="1920" height="960">
+  <g stroke="black" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Astronaut helmet -->
+    <circle cx="960" cy="300" r="130"/>
+    <!-- Visor -->
+    <ellipse cx="960" cy="310" rx="90" ry="80"/>
+    <!-- Face inside visor -->
+    <circle cx="935" cy="295" r="12"/>
+    <circle cx="985" cy="295" r="12"/>
+    <circle cx="938" cy="293" r="5"/>
+    <circle cx="988" cy="293" r="5"/>
+    <path d="M945 330 Q960 345 975 330"/>
+    <!-- Helmet reflection -->
+    <path d="M900 260 Q910 250 920 260"/>
+
+    <!-- Body / suit -->
+    <path d="M870 420 Q860 380 880 350 Q910 410 960 420 Q1010 410 1040 350 Q1060 380 1050 420"/>
+    <rect x="870" y="420" rx="20" ry="20" width="180" height="220"/>
+    <!-- Suit details -->
+    <rect x="910" y="450" rx="5" ry="5" width="100" height="60"/>
+    <circle cx="960" cy="480" r="8"/>
+    <circle cx="940" cy="560" r="12"/>
+    <circle cx="960" cy="560" r="12"/>
+    <circle cx="980" cy="560" r="12"/>
+
+    <!-- Backpack -->
+    <rect x="1050" y="390" rx="15" ry="15" width="70" height="200"/>
+    <line x1="1065" y1="430" x2="1105" y2="430"/>
+    <line x1="1065" y1="460" x2="1105" y2="460"/>
+
+    <!-- Arms -->
+    <path d="M870 450 Q780 440 730 500 Q710 540 740 560"/>
+    <circle cx="740" cy="565" r="30"/>
+    <path d="M1050 450 Q1140 480 1180 420 Q1200 380 1180 360"/>
+    <circle cx="1180" cy="355" r="30"/>
+
+    <!-- Legs -->
+    <path d="M910 640 Q900 720 880 780"/>
+    <path d="M940 640 Q930 720 920 780"/>
+    <ellipse cx="900" cy="800" rx="40" ry="25"/>
+    <path d="M980 640 Q990 720 1010 780"/>
+    <path d="M1010 640 Q1020 720 1040 780"/>
+    <ellipse cx="1025" cy="800" rx="40" ry="25"/>
+
+    <!-- Tether line -->
+    <path d="M1120 490 Q1200 500 1250 450 Q1300 400 1280 350"/>
+
+    <!-- Planet 1 - large with ring -->
+    <circle cx="350" cy="500" r="130"/>
+    <path d="M200 440 Q350 380 500 440"/>
+    <path d="M200 440 Q350 500 500 440"/>
+    <ellipse cx="350" cy="500" rx="200" ry="50"/>
+    <!-- Planet surface details -->
+    <circle cx="310" cy="460" r="20"/>
+    <circle cx="380" cy="530" r="15"/>
+    <circle cx="330" cy="540" r="12"/>
+
+    <!-- Planet 2 - small -->
+    <circle cx="1650" cy="650" r="80"/>
+    <circle cx="1630" cy="630" r="15"/>
+    <circle cx="1670" cy="670" r="10"/>
+    <circle cx="1640" cy="680" r="12"/>
+    <path d="M1580 620 Q1650 600 1720 620"/>
+
+    <!-- Stars -->
+    <path d="M200 150 L210 180 L240 190 L210 200 L200 230 L190 200 L160 190 L190 180Z"/>
+    <path d="M500 100 L507 120 L527 127 L507 134 L500 154 L493 134 L473 127 L493 120Z"/>
+    <path d="M1500 120 L1510 145 L1530 152 L1510 159 L1500 179 L1490 159 L1470 152 L1490 145Z"/>
+    <path d="M1700 200 L1707 220 L1727 227 L1707 234 L1700 254 L1693 234 L1673 227 L1693 220Z"/>
+    <path d="M150 700 L157 720 L177 727 L157 734 L150 754 L143 734 L123 727 L143 720Z"/>
+    <path d="M1800 450 L1807 470 L1827 477 L1807 484 L1800 504 L1793 484 L1773 477 L1793 470Z"/>
+    <path d="M750 100 L755 115 L770 120 L755 125 L750 140 L745 125 L730 120 L745 115Z"/>
+    <path d="M1300 800 L1305 815 L1320 820 L1305 825 L1300 840 L1295 825 L1280 820 L1295 815Z"/>
+
+    <!-- Small dots for distant stars -->
+    <circle cx="100" cy="300" r="3"/>
+    <circle cx="400" cy="250" r="3"/>
+    <circle cx="600" cy="50" r="3"/>
+    <circle cx="1100" cy="100" r="3"/>
+    <circle cx="1400" cy="300" r="3"/>
+    <circle cx="1850" cy="150" r="3"/>
+    <circle cx="1600" cy="850" r="3"/>
+    <circle cx="80" cy="800" r="3"/>
+  </g>
+</svg>

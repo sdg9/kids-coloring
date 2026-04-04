@@ -48,12 +48,16 @@ export class ColoringPageSelector {
         backdrop.on('pointerdown', () => this.hide());
         this.container.add(backdrop);
 
-        // Panel background
+        // Panel background — interactive so clicks inside the panel don't dismiss
         const panel = this.scene.add.graphics();
         panel.fillStyle(0x3a3a3a, 0.96);
         panel.fillRoundedRect(PANEL_X, PANEL_Y, PANEL_W, PANEL_H, 16);
         panel.lineStyle(2, 0x666666, 1);
         panel.strokeRoundedRect(PANEL_X, PANEL_Y, PANEL_W, PANEL_H, 16);
+        panel.setInteractive(
+            new Phaser.Geom.Rectangle(PANEL_X, PANEL_Y, PANEL_W, PANEL_H),
+            Phaser.Geom.Rectangle.Contains
+        );
         this.container.add(panel);
 
         // Title
@@ -72,13 +76,13 @@ export class ColoringPageSelector {
         // Pagination controls at bottom
         const navY = PANEL_Y + PANEL_H - 55;
 
-        const prevBtn = new UIButton(this.scene, 460, navY, {
-            width: 80,
-            height: 50,
+        const prevBtn = new UIButton(this.scene, 370, navY, {
+            width: 175,
+            height: 88,
             fillColor: 0x555555,
             label: '<',
-            fontSize: 28,
-            cornerRadius: 10,
+            fontSize: 44,
+            cornerRadius: 14,
             onPress: () => this.prevPage(),
         });
         this.container.add(prevBtn.container);
@@ -91,13 +95,13 @@ export class ColoringPageSelector {
         this.pageText.setOrigin(0.5, 0.5);
         this.container.add(this.pageText);
 
-        const nextBtn = new UIButton(this.scene, 1460, navY, {
-            width: 80,
-            height: 50,
+        const nextBtn = new UIButton(this.scene, 1550, navY, {
+            width: 175,
+            height: 88,
             fillColor: 0x555555,
             label: '>',
-            fontSize: 28,
-            cornerRadius: 10,
+            fontSize: 44,
+            cornerRadius: 14,
             onPress: () => this.nextPage(),
         });
         this.container.add(nextBtn.container);

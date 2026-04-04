@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 960" width="1920" height="960">
+  <g stroke="black" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Ice/snow ground -->
+    <path d="M0 700 Q200 685 400 700 Q600 715 800 695 Q1000 680 1200 700 Q1400 715 1600 690 Q1800 680 1920 700 L1920 960 L0 960 Z"/>
+
+    <!-- Snow mounds -->
+    <path d="M0 750 Q100 720 200 750"/>
+    <path d="M1700 700 Q1800 670 1920 700"/>
+
+    <!-- Igloo -->
+    <path d="M1350 700 Q1350 500 1550 500 Q1750 500 1750 700"/>
+    <!-- Igloo door -->
+    <path d="M1500 700 Q1500 640 1550 640 Q1600 640 1600 700"/>
+    <!-- Igloo brick lines -->
+    <path d="M1380 650 Q1550 640 1720 650"/>
+    <path d="M1360 600 Q1550 590 1740 600"/>
+    <path d="M1400 555 Q1550 545 1700 555"/>
+    <!-- Vertical brick lines -->
+    <line x1="1450" y1="700" x2="1450" y2="650"/>
+    <line x1="1650" y1="700" x2="1650" y2="650"/>
+    <line x1="1500" y1="650" x2="1500" y2="600"/>
+    <line x1="1600" y1="650" x2="1600" y2="600"/>
+    <line x1="1550" y1="600" x2="1550" y2="555"/>
+    <line x1="1450" y1="600" x2="1450" y2="555"/>
+    <line x1="1650" y1="600" x2="1650" y2="555"/>
+
+    <!-- Mountains in background -->
+    <polygon points="0,500 200,250 400,500"/>
+    <polygon points="250,500 500,200 750,500"/>
+    <polygon points="600,500 850,280 1100,500"/>
+
+    <!-- Snowflakes -->
+    <circle cx="300" cy="200" r="5"/>
+    <line x1="300" y1="190" x2="300" y2="210"/>
+    <line x1="290" y1="200" x2="310" y2="200"/>
+    <circle cx="1100" cy="150" r="5"/>
+    <line x1="1100" y1="140" x2="1100" y2="160"/>
+    <line x1="1090" y1="150" x2="1110" y2="150"/>
+    <circle cx="700" cy="250" r="4"/>
+    <circle cx="1500" cy="300" r="4"/>
+    <circle cx="200" cy="350" r="4"/>
+    <circle cx="1700" cy="200" r="4"/>
+
+    <!-- Penguin body -->
+    <ellipse cx="800" cy="530" rx="100" ry="150"/>
+
+    <!-- Penguin belly -->
+    <ellipse cx="800" cy="550" rx="60" ry="110"/>
+
+    <!-- Penguin head -->
+    <circle cx="800" cy="370" r="65"/>
+
+    <!-- Penguin face patch -->
+    <ellipse cx="800" cy="380" rx="42" ry="40"/>
+
+    <!-- Penguin eyes -->
+    <ellipse cx="780" cy="370" rx="12" ry="14"/>
+    <circle cx="782" cy="370" r="6"/>
+    <ellipse cx="820" cy="370" rx="12" ry="14"/>
+    <circle cx="818" cy="370" r="6"/>
+
+    <!-- Penguin beak -->
+    <path d="M790 395 L800 415 L810 395 Z"/>
+
+    <!-- Penguin wings/flippers -->
+    <path d="M700 470 Q650 520 660 590 Q665 610 690 600 Q710 590 705 560 Q700 520 710 480"/>
+    <path d="M900 470 Q950 520 940 590 Q935 610 910 600 Q890 590 895 560 Q900 520 890 480"/>
+
+    <!-- Penguin feet -->
+    <path d="M750 680 L720 710 L700 700 L720 690 L740 680"/>
+    <path d="M850 680 L880 710 L900 700 L880 690 L860 680"/>
+    <path d="M750 680 L760 710 L740 710 L720 710"/>
+    <path d="M850 680 L840 710 L860 710 L880 710"/>
+
+    <!-- Fish near penguin -->
+    <path d="M550 650 Q570 630 600 640 Q620 650 600 660 Q570 670 550 650 Z"/>
+    <path d="M530 650 L510 635 L510 665 Z"/>
+    <circle cx="595" cy="647" r="3"/>
+
+    <!-- Another fish -->
+    <path d="M1050 680 Q1070 665 1095 672 Q1110 680 1095 690 Q1070 697 1050 680 Z"/>
+    <path d="M1035 680 L1015 668 L1015 692 Z"/>
+    <circle cx="1090" cy="677" r="3"/>
+
+    <!-- Small ice chunks in water area -->
+    <path d="M100 800 Q130 780 160 800 Q180 810 150 815 Q120 810 100 800 Z"/>
+    <path d="M1800 780 Q1830 760 1860 780 Q1880 790 1850 795 Q1820 790 1800 780 Z"/>
+
+    <!-- Stars in sky -->
+    <path d="M1800 100 L1805 115 L1820 115 L1808 125 L1813 140 L1800 130 L1787 140 L1792 125 L1780 115 L1795 115 Z"/>
+    <path d="M1300 80 L1303 90 L1313 90 L1305 97 L1308 107 L1300 100 L1292 107 L1295 97 L1287 90 L1297 90 Z"/>
+  </g>
+</svg>

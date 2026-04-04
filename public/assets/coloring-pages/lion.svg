@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 960" width="1920" height="960">
+  <g stroke="black" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Savanna ground -->
+    <path d="M0 750 Q200 730 400 750 Q600 770 800 745 Q1000 720 1200 750 Q1400 770 1600 740 Q1800 720 1920 750 L1920 960 L0 960 Z"/>
+
+    <!-- Sun -->
+    <circle cx="1700" cy="150" r="80"/>
+    <line x1="1700" y1="40" x2="1700" y2="10"/>
+    <line x1="1700" y1="260" x2="1700" y2="290"/>
+    <line x1="1590" y1="150" x2="1560" y2="150"/>
+    <line x1="1810" y1="150" x2="1840" y2="150"/>
+    <line x1="1622" y1="72" x2="1600" y2="50"/>
+    <line x1="1778" y1="72" x2="1800" y2="50"/>
+    <line x1="1622" y1="228" x2="1600" y2="250"/>
+    <line x1="1778" y1="228" x2="1800" y2="250"/>
+
+    <!-- Acacia tree left -->
+    <rect x="180" y="450" width="40" height="300" rx="5"/>
+    <ellipse cx="200" cy="400" rx="150" ry="80"/>
+    <ellipse cx="120" cy="420" rx="80" ry="50"/>
+    <ellipse cx="280" cy="420" rx="80" ry="50"/>
+
+    <!-- Acacia tree right -->
+    <rect x="1500" y="500" width="35" height="250" rx="5"/>
+    <ellipse cx="1517" cy="460" rx="120" ry="65"/>
+    <ellipse cx="1440" cy="475" rx="65" ry="40"/>
+    <ellipse cx="1597" cy="475" rx="65" ry="40"/>
+
+    <!-- Small bush -->
+    <ellipse cx="1100" cy="740" rx="70" ry="40"/>
+    <ellipse cx="1060" cy="730" rx="40" ry="30"/>
+    <ellipse cx="1140" cy="730" rx="40" ry="30"/>
+
+    <!-- Lion body -->
+    <ellipse cx="750" cy="620" rx="180" ry="110"/>
+
+    <!-- Lion back legs -->
+    <path d="M620 690 L600 780 L570 780 L570 750 L590 750 L610 690"/>
+    <path d="M680 700 L670 780 L640 780 L640 750 L660 750 L670 700"/>
+
+    <!-- Lion front legs -->
+    <path d="M840 690 L850 780 L820 780 L820 750 L840 750 L850 690"/>
+    <path d="M890 680 L910 780 L880 780 L880 750 L900 750 L910 680"/>
+
+    <!-- Lion tail -->
+    <path d="M570 590 Q480 520 470 480 Q460 450 490 460 Q510 465 500 490 Q495 510 520 550"/>
+
+    <!-- Lion neck -->
+    <path d="M880 560 Q920 500 940 460"/>
+
+    <!-- Lion mane - big circle of bumps -->
+    <path d="M940 280 Q970 260 1000 280 Q1030 260 1060 280 Q1090 270 1100 300 Q1120 320 1100 350 Q1120 380 1100 400 Q1110 430 1090 450 Q1080 475 1050 470 Q1040 495 1010 485 Q990 500 970 485 Q950 500 930 485 Q910 495 900 470 Q875 475 865 450 Q845 440 850 410 Q830 390 845 365 Q830 340 850 320 Q840 295 860 280 Q880 260 910 275 Q920 265 940 280 Z"/>
+
+    <!-- Lion face -->
+    <ellipse cx="975" cy="380" rx="85" ry="75"/>
+
+    <!-- Lion ears -->
+    <ellipse cx="905" cy="310" rx="25" ry="30"/>
+    <ellipse cx="1050" cy="310" rx="25" ry="30"/>
+
+    <!-- Lion eyes -->
+    <ellipse cx="945" cy="360" rx="15" ry="12"/>
+    <circle cx="948" cy="360" r="5"/>
+    <ellipse cx="1010" cy="360" rx="15" ry="12"/>
+    <circle cx="1007" cy="360" r="5"/>
+
+    <!-- Lion nose -->
+    <path d="M968 395 L980 395 L974 405 Z"/>
+
+    <!-- Lion mouth -->
+    <path d="M974 405 L974 420"/>
+    <path d="M960 420 Q974 435 990 420"/>
+
+    <!-- Lion whiskers -->
+    <line x1="930" y1="405" x2="895" y2="395"/>
+    <line x1="930" y1="412" x2="895" y2="415"/>
+    <line x1="1020" y1="405" x2="1055" y2="395"/>
+    <line x1="1020" y1="412" x2="1055" y2="415"/>
+
+    <!-- Grass tufts -->
+    <path d="M50 750 Q60 720 70 750"/>
+    <path d="M65 750 Q75 715 85 750"/>
+    <path d="M350 755 Q360 725 370 755"/>
+    <path d="M500 745 Q510 715 520 745"/>
+    <path d="M1300 750 Q1310 720 1320 750"/>
+    <path d="M1650 740 Q1660 710 1670 740"/>
+    <path d="M1800 745 Q1810 715 1820 745"/>
+  </g>
+</svg>

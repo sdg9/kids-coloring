@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 960" width="1920" height="960">
+  <g stroke="black" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Ground -->
+    <path d="M0 780 Q300 765 600 780 Q900 795 1200 775 Q1500 760 1920 780 L1920 960 L0 960 Z"/>
+
+    <!-- Fence -->
+    <line x1="50" y1="650" x2="1870" y2="650"/>
+    <line x1="50" y1="700" x2="1870" y2="700"/>
+    <!-- Fence posts -->
+    <rect x="50" y="620" width="20" height="160" rx="3"/>
+    <rect x="300" y="620" width="20" height="160" rx="3"/>
+    <rect x="550" y="620" width="20" height="160" rx="3"/>
+    <rect x="800" y="620" width="20" height="160" rx="3"/>
+    <rect x="1050" y="620" width="20" height="160" rx="3"/>
+    <rect x="1300" y="620" width="20" height="160" rx="3"/>
+    <rect x="1550" y="620" width="20" height="160" rx="3"/>
+    <rect x="1800" y="620" width="20" height="160" rx="3"/>
+
+    <!-- Hills in background -->
+    <path d="M0 650 Q250 550 500 620 Q700 530 900 600 Q1100 520 1350 590 Q1550 530 1750 600 Q1850 620 1920 640"/>
+
+    <!-- Cloud 1 -->
+    <ellipse cx="400" cy="120" rx="90" ry="40"/>
+    <ellipse cx="340" cy="130" rx="55" ry="30"/>
+    <ellipse cx="460" cy="130" rx="55" ry="30"/>
+
+    <!-- Cloud 2 -->
+    <ellipse cx="1400" cy="100" rx="80" ry="35"/>
+    <ellipse cx="1345" cy="108" rx="50" ry="28"/>
+    <ellipse cx="1460" cy="108" rx="50" ry="28"/>
+
+    <!-- Horse body -->
+    <ellipse cx="960" cy="400" rx="220" ry="120"/>
+
+    <!-- Horse neck -->
+    <path d="M1120 340 Q1180 260 1200 200"/>
+    <path d="M1170 380 Q1230 300 1250 230"/>
+
+    <!-- Horse head -->
+    <path d="M1200 200 Q1210 150 1260 130 Q1310 115 1340 140 Q1360 155 1350 180 Q1340 200 1310 210 Q1280 220 1250 230"/>
+    <path d="M1200 200 Q1220 210 1250 230"/>
+
+    <!-- Horse ears -->
+    <path d="M1230 135 L1220 95 L1250 120"/>
+    <path d="M1265 125 L1270 85 L1290 115"/>
+
+    <!-- Horse eye -->
+    <ellipse cx="1270" cy="160" rx="12" ry="10"/>
+    <circle cx="1272" cy="160" r="5"/>
+
+    <!-- Horse nostril -->
+    <ellipse cx="1335" cy="175" rx="8" ry="6"/>
+
+    <!-- Horse mouth -->
+    <path d="M1340 190 Q1320 200 1310 210"/>
+
+    <!-- Horse mane -->
+    <path d="M1220 110 Q1200 130 1190 160 Q1180 180 1170 200 Q1160 230 1140 260 Q1130 280 1120 310"/>
+    <path d="M1210 120 Q1185 145 1175 175 Q1165 200 1155 230 Q1145 260 1130 290"/>
+    <path d="M1195 140 Q1170 170 1160 200 Q1150 230 1140 260"/>
+
+    <!-- Horse front legs (running pose) -->
+    <path d="M1080 490 L1130 580 L1150 570 L1100 490"/>
+    <path d="M1080 580 L1080 600 L1150 600 L1150 570"/>
+    <path d="M1020 500 L1000 600 L980 600 L980 580 L995 580 L1010 500"/>
+
+    <!-- Horse back legs (running pose) -->
+    <path d="M830 490 Q800 540 780 600 L760 600 L760 580 L775 580 Q790 540 820 490"/>
+    <path d="M780 480 Q740 530 700 590 L680 590 L680 570 L695 570 Q730 520 770 480"/>
+
+    <!-- Horse tail -->
+    <path d="M740 370 Q680 340 650 310 Q630 290 640 280 Q660 275 670 300 Q680 320 700 350"/>
+    <path d="M740 380 Q690 360 660 340 Q640 325 650 310"/>
+    <path d="M740 390 Q700 380 680 370"/>
+
+    <!-- Horse hooves -->
+    <rect x="1075" y="598" width="30" height="15" rx="3"/>
+    <rect x="975" y="598" width="30" height="15" rx="3"/>
+    <rect x="755" y="598" width="30" height="15" rx="3"/>
+    <rect x="675" y="588" width="30" height="15" rx="3"/>
+
+    <!-- Grass tufts -->
+    <path d="M150 780 Q160 755 170 780"/>
+    <path d="M160 780 Q170 750 180 780"/>
+    <path d="M450 775 Q460 750 470 775"/>
+    <path d="M1200 770 Q1210 745 1220 770"/>
+    <path d="M1600 775 Q1610 750 1620 775"/>
+
+    <!-- Small flowers -->
+    <circle cx="350" cy="775" r="10"/>
+    <circle cx="350" cy="775" r="3"/>
+    <line x1="350" y1="785" x2="350" y2="810"/>
+    <circle cx="1450" cy="770" r="10"/>
+    <circle cx="1450" cy="770" r="3"/>
+    <line x1="1450" y1="780" x2="1450" y2="805"/>
+  </g>
+</svg>

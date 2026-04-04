@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 960" width="1920" height="960">
+  <g stroke="black" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Star on top -->
+    <path d="M960 50 L975 100 L1025 100 L985 130 L1000 180 L960 150 L920 180 L935 130 L895 100 L945 100Z"/>
+
+    <!-- Tree - three tiers -->
+    <!-- Top tier -->
+    <path d="M960 160 L840 320 L1080 320Z"/>
+    <!-- Middle tier -->
+    <path d="M960 260 L780 460 L1140 460Z"/>
+    <!-- Bottom tier -->
+    <path d="M960 380 L700 620 L1220 620Z"/>
+
+    <!-- Trunk -->
+    <rect x="920" y="620" width="80" height="100"/>
+
+    <!-- Ornaments - circles on the tree -->
+    <circle cx="920" cy="280" r="15"/>
+    <circle cx="1000" cy="290" r="15"/>
+    <circle cx="960" cy="260" r="12"/>
+
+    <circle cx="860" cy="400" r="18"/>
+    <circle cx="960" cy="420" r="18"/>
+    <circle cx="1060" cy="400" r="18"/>
+    <circle cx="910" cy="380" r="14"/>
+    <circle cx="1010" cy="380" r="14"/>
+
+    <circle cx="790" cy="550" r="20"/>
+    <circle cx="900" cy="570" r="20"/>
+    <circle cx="1020" cy="570" r="20"/>
+    <circle cx="1130" cy="550" r="20"/>
+    <circle cx="850" cy="520" r="16"/>
+    <circle cx="960" cy="540" r="16"/>
+    <circle cx="1080" cy="520" r="16"/>
+
+    <!-- Garland / tinsel lines -->
+    <path d="M870 300 Q920 320 980 295"/>
+    <path d="M820 440 Q900 470 1000 440 Q1060 420 1100 440"/>
+    <path d="M750 580 Q850 610 960 580 Q1060 560 1170 590"/>
+
+    <!-- Pot / base -->
+    <path d="M880 720 L900 820 L1020 820 L1040 720Z"/>
+    <line x1="870" y1="720" x2="1050" y2="720"/>
+
+    <!-- Present 1 - left -->
+    <rect x="350" y="720" rx="5" ry="5" width="150" height="120"/>
+    <line x1="425" y1="720" x2="425" y2="840"/>
+    <line x1="350" y1="780" x2="500" y2="780"/>
+    <!-- Bow -->
+    <path d="M425 720 Q390 690 400 670 Q410 680 425 680 Q440 680 450 670 Q460 690 425 720Z"/>
+
+    <!-- Present 2 - right -->
+    <rect x="1400" y="750" rx="5" ry="5" width="180" height="100"/>
+    <line x1="1490" y1="750" x2="1490" y2="850"/>
+    <line x1="1400" y1="800" x2="1580" y2="800"/>
+    <!-- Bow -->
+    <path d="M1490 750 Q1455 720 1465 700 Q1475 710 1490 710 Q1505 710 1515 700 Q1525 720 1490 750Z"/>
+
+    <!-- Present 3 - small -->
+    <rect x="1200" y="780" rx="5" ry="5" width="100" height="80"/>
+    <line x1="1250" y1="780" x2="1250" y2="860"/>
+    <line x1="1200" y1="820" x2="1300" y2="820"/>
+    <path d="M1250 780 Q1225 765 1230 755 Q1238 760 1250 760 Q1262 760 1270 755 Q1275 765 1250 780Z"/>
+
+    <!-- Candy cane left of tree -->
+    <path d="M620 650 L620 800 Q620 840 660 840 Q700 840 700 800"/>
+
+    <!-- Candy cane stripes -->
+    <line x1="620" y1="700" x2="635" y2="680"/>
+    <line x1="620" y1="740" x2="635" y2="720"/>
+    <line x1="620" y1="780" x2="635" y2="760"/>
+
+    <!-- Snowflakes / decorative elements -->
+    <path d="M200 200 L200 260 M170 230 L230 230 M180 210 L220 250 M220 210 L180 250"/>
+    <path d="M1700 300 L1700 350 M1675 325 L1725 325 M1685 310 L1715 340 M1715 310 L1685 340"/>
+    <path d="M300 500 L300 540 M280 520 L320 520 M288 508 L312 532 M312 508 L288 532"/>
+
+    <!-- Ground / snow line -->
+    <path d="M0 870 Q200 850 400 870 Q600 890 800 870 Q1000 850 1200 870 Q1400 890 1600 870 Q1800 850 1920 870"/>
+  </g>
+</svg>

@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 960" width="1920" height="960">
+  <g stroke="black" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Beehive -->
+    <path d="M1350 200 Q1350 100 1500 100 Q1650 100 1650 200"/>
+    <path d="M1300 200 L1700 200"/>
+    <path d="M1280 300 L1720 300"/>
+    <path d="M1270 400 L1730 400"/>
+    <path d="M1290 500 L1710 500"/>
+    <path d="M1320 580 Q1500 680 1680 580"/>
+    <!-- Hive curves -->
+    <path d="M1300 200 Q1280 250 1280 300"/>
+    <path d="M1700 200 Q1720 250 1720 300"/>
+    <path d="M1280 300 Q1270 350 1270 400"/>
+    <path d="M1720 300 Q1730 350 1730 400"/>
+    <path d="M1270 400 Q1270 450 1290 500"/>
+    <path d="M1730 400 Q1730 450 1710 500"/>
+    <path d="M1290 500 Q1300 550 1320 580"/>
+    <path d="M1710 500 Q1700 550 1680 580"/>
+    <!-- Hive entrance -->
+    <ellipse cx="1500" cy="570" rx="50" ry="40"/>
+    <!-- Branch -->
+    <path d="M1500 100 L1500 50 Q1400 30 1200 50"/>
+    <path d="M1500 50 Q1600 30 1800 60"/>
+
+    <!-- Bee body -->
+    <ellipse cx="700" cy="350" rx="160" ry="110"/>
+    <!-- Stripes -->
+    <path d="M620 260 Q620 350 620 445"/>
+    <path d="M700 245 Q700 350 700 455"/>
+    <path d="M780 260 Q780 350 780 445"/>
+    <!-- Bee head -->
+    <circle cx="520" cy="350" r="80"/>
+    <!-- Eyes -->
+    <circle cx="495" cy="330" r="20"/>
+    <circle cx="545" cy="330" r="20"/>
+    <circle cx="498" cy="327" r="8"/>
+    <circle cx="548" cy="327" r="8"/>
+    <!-- Smile -->
+    <path d="M500 370 Q520 390 540 370"/>
+    <!-- Antennae -->
+    <path d="M490 275 Q460 210 430 180"/>
+    <circle cx="425" cy="175" r="10"/>
+    <path d="M540 275 Q560 210 580 180"/>
+    <circle cx="585" cy="175" r="10"/>
+
+    <!-- Wings -->
+    <ellipse cx="680" cy="220" rx="100" ry="60" transform="rotate(-15 680 220)"/>
+    <ellipse cx="760" cy="210" rx="80" ry="50" transform="rotate(-10 760 210)"/>
+
+    <!-- Stinger -->
+    <path d="M860 350 L910 350"/>
+
+    <!-- Legs -->
+    <path d="M620 460 Q600 510 580 540"/>
+    <path d="M700 460 Q700 520 700 560"/>
+    <path d="M780 460 Q800 510 820 540"/>
+
+    <!-- Flower 1 -->
+    <path d="M250 650 L250 900"/>
+    <circle cx="250" cy="600" r="40"/>
+    <circle cx="210" cy="625" r="40"/>
+    <circle cx="290" cy="625" r="40"/>
+    <circle cx="220" cy="665" r="40"/>
+    <circle cx="280" cy="665" r="40"/>
+    <circle cx="250" cy="640" r="25"/>
+    <path d="M250 750 Q190 730 170 750 Q190 770 250 770"/>
+    <path d="M250 800 Q310 780 330 800 Q310 820 250 820"/>
+
+    <!-- Flower 2 -->
+    <path d="M1050 700 L1050 900"/>
+    <ellipse cx="1050" cy="650" rx="35" ry="35"/>
+    <ellipse cx="1015" cy="670" rx="35" ry="35"/>
+    <ellipse cx="1085" cy="670" rx="35" ry="35"/>
+    <ellipse cx="1025" cy="705" rx="35" ry="35"/>
+    <ellipse cx="1075" cy="705" rx="35" ry="35"/>
+    <circle cx="1050" cy="680" r="22"/>
+
+    <!-- Flower 3 - small daisy -->
+    <path d="M450 750 L450 900"/>
+    <circle cx="450" cy="720" r="20"/>
+    <circle cx="430" cy="735" r="20"/>
+    <circle cx="470" cy="735" r="20"/>
+    <circle cx="435" cy="755" r="20"/>
+    <circle cx="465" cy="755" r="20"/>
+    <circle cx="450" cy="740" r="13"/>
+
+    <!-- Grass tufts -->
+    <path d="M50 900 Q60 860 70 900"/>
+    <path d="M70 900 Q80 870 90 900"/>
+    <path d="M150 900 Q160 865 170 900"/>
+    <path d="M800 900 Q810 860 820 900"/>
+    <path d="M820 900 Q830 870 840 900"/>
+    <path d="M1300 900 Q1310 865 1320 900"/>
+    <path d="M1700 900 Q1710 860 1720 900"/>
+
+    <!-- Ground -->
+    <line x1="0" y1="900" x2="1920" y2="900"/>
+  </g>
+</svg>

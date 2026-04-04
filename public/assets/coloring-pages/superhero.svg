@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 960" width="1920" height="960">
+  <g stroke="black" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- City skyline background -->
+    <rect x="200" y="500" width="120" height="360"/>
+    <rect x="220" y="520" width="25" height="30"/>
+    <rect x="270" y="520" width="25" height="30"/>
+    <rect x="220" y="570" width="25" height="30"/>
+    <rect x="270" y="570" width="25" height="30"/>
+    <rect x="220" y="620" width="25" height="30"/>
+    <rect x="270" y="620" width="25" height="30"/>
+    <rect x="350" y="400" width="100" height="460"/>
+    <rect x="370" y="420" width="20" height="25"/>
+    <rect x="410" y="420" width="20" height="25"/>
+    <rect x="370" y="470" width="20" height="25"/>
+    <rect x="410" y="470" width="20" height="25"/>
+    <rect x="370" y="520" width="20" height="25"/>
+    <rect x="410" y="520" width="20" height="25"/>
+    <rect x="480" y="550" width="90" height="310"/>
+    <rect x="500" y="570" width="20" height="25"/>
+    <rect x="535" y="570" width="20" height="25"/>
+    <rect x="500" y="620" width="20" height="25"/>
+    <rect x="535" y="620" width="20" height="25"/>
+    <rect x="1350" y="450" width="110" height="410"/>
+    <rect x="1370" y="470" width="20" height="25"/>
+    <rect x="1420" y="470" width="20" height="25"/>
+    <rect x="1370" y="520" width="20" height="25"/>
+    <rect x="1420" y="520" width="20" height="25"/>
+    <rect x="1490" y="520" width="100" height="340"/>
+    <rect x="1510" y="540" width="20" height="25"/>
+    <rect x="1550" y="540" width="20" height="25"/>
+    <rect x="1510" y="590" width="20" height="25"/>
+    <rect x="1550" y="590" width="20" height="25"/>
+    <rect x="1620" y="580" width="80" height="280"/>
+    <rect x="1640" y="600" width="20" height="25"/>
+    <!-- Ground -->
+    <path d="M150 860 L1750 860"/>
+    <!-- Kid superhero - flying pose -->
+    <!-- Head -->
+    <circle cx="960" cy="320" r="60"/>
+    <!-- Mask -->
+    <path d="M900 310 L920 295 L960 310 L1000 295 L1020 310 L1000 325 L960 315 L920 325 Z"/>
+    <!-- Eyes through mask -->
+    <ellipse cx="935" cy="310" rx="12" ry="10"/>
+    <circle cx="935" cy="310" r="5"/>
+    <ellipse cx="985" cy="310" rx="12" ry="10"/>
+    <circle cx="985" cy="310" r="5"/>
+    <!-- Determined smile -->
+    <path d="M940 345 L960 355 L980 345"/>
+    <!-- Hair -->
+    <path d="M910 280 Q930 240 960 250 Q990 240 1010 280"/>
+    <path d="M920 260 Q960 230 1000 260"/>
+    <!-- Body - heroic pose -->
+    <path d="M920 380 L900 500 L1020 500 L1000 380"/>
+    <!-- Belt -->
+    <path d="M900 490 L1020 490"/>
+    <!-- Belt buckle -->
+    <rect x="945" y="480" width="30" height="20" rx="3"/>
+    <!-- Star on chest -->
+    <path d="M960 410 L970 435 L995 435 L975 450 L982 475 L960 460 L938 475 L945 450 L925 435 L950 435 Z"/>
+    <!-- Cape flowing behind -->
+    <path d="M920 380 L800 350 L750 450 Q780 500 760 580 Q740 650 780 720 L850 650 Q830 580 860 500 Z"/>
+    <path d="M1000 380 L1120 350 L1170 450 Q1140 500 1160 580 Q1180 650 1140 720 L1070 650 Q1090 580 1060 500 Z"/>
+    <!-- Left arm - fist forward -->
+    <path d="M900 400 L780 380 L720 360"/>
+    <!-- Left fist -->
+    <ellipse cx="715" cy="358" rx="18" ry="15"/>
+    <!-- Right arm - fist up -->
+    <path d="M1020 400 L1100 350 L1140 300"/>
+    <!-- Right fist -->
+    <ellipse cx="1145" cy="295" rx="18" ry="15"/>
+    <!-- Left leg -->
+    <path d="M920 500 L890 620 L870 720"/>
+    <!-- Left boot -->
+    <path d="M855 700 L870 720 L870 750 L840 760 L840 740 L855 700"/>
+    <!-- Right leg -->
+    <path d="M1000 500 L1030 620 L1050 720"/>
+    <!-- Right boot -->
+    <path d="M1065 700 L1050 720 L1050 750 L1080 760 L1080 740 L1065 700"/>
+    <!-- Motion lines -->
+    <path d="M650 340 L600 340"/>
+    <path d="M660 370 L600 380"/>
+    <path d="M660 310 L600 300"/>
+    <!-- Clouds -->
+    <path d="M200 200 Q230 170 270 180 Q290 150 330 170 Q360 150 380 180 Q410 170 420 200 Q430 230 390 240 Q370 260 330 250 Q290 260 260 240 Q220 250 200 230 Z"/>
+    <path d="M1400 150 Q1430 120 1470 130 Q1490 100 1530 120 Q1560 100 1580 130 Q1610 120 1620 150 Q1630 180 1590 190 Q1570 210 1530 200 Q1490 210 1460 190 Q1420 200 1400 180 Z"/>
+  </g>
+</svg>

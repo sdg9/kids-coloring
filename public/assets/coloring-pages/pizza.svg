@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 960" width="1920" height="960">
+  <g stroke="black" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Big pizza slice -->
+    <path d="M960 80 L480 880 Q960 920 1440 880 Z"/>
+    <!-- Crust arc -->
+    <path d="M510 840 Q960 880 1410 840"/>
+    <path d="M480 880 Q960 920 1440 880"/>
+    <!-- Crust texture bumps -->
+    <path d="M520 860 Q540 845 560 860"/>
+    <path d="M600 868 Q620 852 640 868"/>
+    <path d="M680 874 Q700 858 720 874"/>
+    <path d="M760 878 Q780 862 800 878"/>
+    <path d="M840 882 Q860 866 880 882"/>
+    <path d="M920 884 Q940 868 960 884"/>
+    <path d="M1000 882 Q1020 866 1040 882"/>
+    <path d="M1080 878 Q1100 862 1120 878"/>
+    <path d="M1160 874 Q1180 858 1200 874"/>
+    <path d="M1240 868 Q1260 852 1280 868"/>
+    <path d="M1320 860 Q1340 845 1360 860"/>
+    <!-- Pepperoni circles -->
+    <circle cx="800" cy="500" r="45"/>
+    <circle cx="1050" cy="450" r="45"/>
+    <circle cx="920" cy="650" r="50"/>
+    <circle cx="700" cy="700" r="42"/>
+    <circle cx="1150" cy="650" r="45"/>
+    <circle cx="1250" cy="780" r="40"/>
+    <circle cx="600" cy="600" r="38"/>
+    <!-- Pepperoni shine marks -->
+    <path d="M790 488 Q795 482 792 478"/>
+    <path d="M1040 438 Q1045 432 1042 428"/>
+    <path d="M910 638 Q915 632 912 628"/>
+    <path d="M690 688 Q695 682 692 678"/>
+    <path d="M1140 638 Q1145 632 1142 628"/>
+    <!-- Mushroom slices -->
+    <path d="M850 350 Q870 310 910 320 Q930 310 940 340 L920 350 L900 340 L880 350 Z"/>
+    <path d="M1100 560 Q1120 520 1160 530 Q1180 520 1190 550 L1170 560 L1150 550 L1130 560 Z"/>
+    <path d="M580 770 Q595 740 625 748 Q640 740 648 762 L633 770 L618 762 L603 770 Z"/>
+    <!-- Green pepper pieces -->
+    <path d="M750 400 Q770 380 790 400 Q780 420 760 420 Q740 420 750 400"/>
+    <path d="M1000 750 Q1020 730 1040 750 Q1030 770 1010 770 Q990 770 1000 750"/>
+    <path d="M660 500 Q675 485 690 500 Q682 515 668 515 Q655 515 660 500"/>
+    <!-- Olive slices -->
+    <circle cx="980" cy="320" r="25"/>
+    <circle cx="980" cy="320" r="12"/>
+    <circle cx="1300" cy="700" r="28"/>
+    <circle cx="1300" cy="700" r="14"/>
+    <circle cx="550" cy="700" r="22"/>
+    <circle cx="550" cy="700" r="11"/>
+    <!-- Cheese drip from tip -->
+    <path d="M955 85 Q950 100 960 110 Q965 100 960 85"/>
+    <!-- Cheese stretch marks -->
+    <path d="M900 200 Q910 250 920 200"/>
+    <path d="M1000 250 Q1010 300 1020 250"/>
+    <!-- Steam lines from hot pizza -->
+    <path d="M920 50 Q910 30 920 10"/>
+    <path d="M960 40 Q950 20 960 0"/>
+    <path d="M1000 50 Q990 30 1000 10"/>
+  </g>
+</svg>

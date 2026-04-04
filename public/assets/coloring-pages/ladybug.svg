@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 960" width="1920" height="960">
+  <g stroke="black" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Large leaf -->
+    <path d="M300 750 Q600 400 960 500 Q1300 400 1600 750 Q1300 700 960 720 Q600 700 300 750Z"/>
+    <path d="M960 500 L960 750"/>
+    <path d="M960 560 Q800 580 700 650"/>
+    <path d="M960 560 Q1120 580 1220 650"/>
+    <path d="M960 620 Q840 640 760 700"/>
+    <path d="M960 620 Q1080 640 1160 700"/>
+    <!-- Leaf stem -->
+    <path d="M960 750 Q980 820 1050 900"/>
+
+    <!-- Ladybug body -->
+    <ellipse cx="960" cy="420" rx="200" ry="160"/>
+    <!-- Wing line -->
+    <line x1="960" y1="280" x2="960" y2="560"/>
+    <!-- Spots left -->
+    <circle cx="870" cy="360" r="30"/>
+    <circle cx="900" cy="460" r="25"/>
+    <circle cx="830" cy="440" r="20"/>
+    <!-- Spots right -->
+    <circle cx="1050" cy="360" r="30"/>
+    <circle cx="1020" cy="460" r="25"/>
+    <circle cx="1090" cy="440" r="20"/>
+
+    <!-- Ladybug head -->
+    <circle cx="960" cy="270" r="70"/>
+    <!-- Eyes -->
+    <circle cx="935" cy="255" r="15"/>
+    <circle cx="985" cy="255" r="15"/>
+    <!-- Pupils -->
+    <circle cx="938" cy="252" r="6"/>
+    <circle cx="988" cy="252" r="6"/>
+    <!-- Smile -->
+    <path d="M940 285 Q960 300 980 285"/>
+    <!-- Antennae -->
+    <path d="M930 210 Q900 140 870 110"/>
+    <circle cx="865" cy="105" r="12"/>
+    <path d="M990 210 Q1020 140 1050 110"/>
+    <circle cx="1055" cy="105" r="12"/>
+    <!-- Legs -->
+    <path d="M790 370 Q730 340 690 310"/>
+    <path d="M780 420 Q710 420 660 410"/>
+    <path d="M790 470 Q730 500 690 530"/>
+    <path d="M1130 370 Q1190 340 1230 310"/>
+    <path d="M1140 420 Q1210 420 1260 410"/>
+    <path d="M1130 470 Q1190 500 1230 530"/>
+
+    <!-- Flower left -->
+    <path d="M300 550 L300 750"/>
+    <circle cx="300" cy="500" r="40"/>
+    <circle cx="260" cy="520" r="40"/>
+    <circle cx="340" cy="520" r="40"/>
+    <circle cx="270" cy="560" r="40"/>
+    <circle cx="330" cy="560" r="40"/>
+    <circle cx="300" cy="535" r="25"/>
+    <!-- Flower leaves -->
+    <path d="M300 650 Q240 630 220 650 Q240 670 300 670"/>
+    <path d="M300 680 Q360 660 380 680 Q360 700 300 700"/>
+
+    <!-- Flower right -->
+    <path d="M1600 550 L1600 750"/>
+    <circle cx="1600" cy="500" r="40"/>
+    <circle cx="1560" cy="520" r="40"/>
+    <circle cx="1640" cy="520" r="40"/>
+    <circle cx="1570" cy="560" r="40"/>
+    <circle cx="1630" cy="560" r="40"/>
+    <circle cx="1600" cy="535" r="25"/>
+    <!-- Flower leaves -->
+    <path d="M1600 650 Q1540 630 1520 650 Q1540 670 1600 670"/>
+    <path d="M1600 680 Q1660 660 1680 680 Q1660 700 1600 700"/>
+
+    <!-- Small flower bottom left -->
+    <path d="M180 800 L180 900"/>
+    <circle cx="180" cy="775" r="25"/>
+    <circle cx="158" cy="790" r="25"/>
+    <circle cx="202" cy="790" r="25"/>
+    <circle cx="165" cy="815" r="25"/>
+    <circle cx="195" cy="815" r="25"/>
+    <circle cx="180" cy="798" r="15"/>
+
+    <!-- Ground line -->
+    <path d="M0 900 Q480 870 960 900 Q1440 870 1920 900"/>
+  </g>
+</svg>

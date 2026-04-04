@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 960" width="1920" height="960">
+  <g stroke="black" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Ground -->
+    <path d="M0 850 Q400 830 800 850 Q1200 870 1600 840 Q1800 830 1920 850 L1920 960 L0 960 Z"/>
+
+    <!-- Tree trunk -->
+    <path d="M300 850 L280 300 Q270 200 310 200 Q350 200 340 300 L360 850"/>
+    <path d="M280 300 Q250 280 230 250"/>
+    <path d="M340 300 Q370 280 390 250"/>
+
+    <!-- Main branch monkey hangs from -->
+    <path d="M310 350 Q500 300 750 320 Q1000 340 1200 300 Q1350 270 1450 290"/>
+
+    <!-- Leaves on branch -->
+    <ellipse cx="500" cy="290" rx="60" ry="30"/>
+    <ellipse cx="650" cy="300" rx="50" ry="25"/>
+    <ellipse cx="1100" cy="285" rx="55" ry="28"/>
+    <ellipse cx="1350" cy="270" rx="50" ry="25"/>
+
+    <!-- Tree canopy -->
+    <ellipse cx="310" cy="200" rx="180" ry="100"/>
+    <ellipse cx="200" cy="220" rx="100" ry="60"/>
+    <ellipse cx="420" cy="220" rx="100" ry="60"/>
+    <ellipse cx="310" cy="150" rx="120" ry="70"/>
+
+    <!-- Monkey tail curling on branch -->
+    <path d="M850 380 Q900 340 930 320 Q960 300 950 280 Q940 260 910 280"/>
+
+    <!-- Monkey body -->
+    <ellipse cx="850" cy="440" rx="70" ry="80"/>
+
+    <!-- Monkey belly patch -->
+    <ellipse cx="850" cy="450" rx="40" ry="50"/>
+
+    <!-- Monkey arm reaching up to branch -->
+    <path d="M800 400 Q760 360 750 320"/>
+    <path d="M790 395 Q750 355 740 320"/>
+
+    <!-- Monkey other arm -->
+    <path d="M910 410 Q950 380 960 340"/>
+    <path d="M920 415 Q960 385 970 345"/>
+
+    <!-- Monkey hand on branch (left) -->
+    <ellipse cx="745" cy="315" rx="15" ry="12"/>
+
+    <!-- Monkey hand on branch (right) -->
+    <ellipse cx="965" cy="338" rx="15" ry="12"/>
+
+    <!-- Monkey legs hanging -->
+    <path d="M810 510 Q790 570 780 620 Q775 640 795 635 Q810 630 800 610"/>
+    <path d="M890 510 Q910 570 920 620 Q925 640 905 635 Q890 630 900 610"/>
+
+    <!-- Monkey head -->
+    <circle cx="850" cy="340" r="55"/>
+
+    <!-- Monkey face patch -->
+    <ellipse cx="850" cy="350" rx="38" ry="35"/>
+
+    <!-- Monkey ears -->
+    <circle cx="795" cy="330" r="22"/>
+    <circle cx="795" cy="330" r="12"/>
+    <circle cx="905" cy="330" r="22"/>
+    <circle cx="905" cy="330" r="12"/>
+
+    <!-- Monkey eyes -->
+    <ellipse cx="832" cy="335" rx="10" ry="12"/>
+    <circle cx="834" cy="337" r="5"/>
+    <ellipse cx="868" cy="335" rx="10" ry="12"/>
+    <circle cx="866" cy="337" r="5"/>
+
+    <!-- Monkey nose -->
+    <ellipse cx="850" cy="358" rx="8" ry="5"/>
+
+    <!-- Monkey mouth (smile) -->
+    <path d="M835 370 Q850 385 865 370"/>
+
+    <!-- Banana bunch hanging from branch -->
+    <path d="M1200 300 L1200 340"/>
+    <path d="M1190 340 Q1170 370 1165 400 Q1162 415 1175 410 Q1185 405 1185 390"/>
+    <path d="M1200 340 Q1195 375 1195 405 Q1195 420 1208 415 Q1215 408 1210 390"/>
+    <path d="M1210 340 Q1225 370 1230 400 Q1233 415 1220 410 Q1212 405 1215 390"/>
+
+    <!-- Single banana on ground -->
+    <path d="M1400 840 Q1430 810 1470 820 Q1490 825 1480 840"/>
+
+    <!-- Small bush -->
+    <ellipse cx="1600" cy="840" rx="80" ry="40"/>
+    <ellipse cx="1550" cy="835" rx="50" ry="30"/>
+    <ellipse cx="1650" cy="835" rx="50" ry="30"/>
+
+    <!-- Flowers -->
+    <circle cx="550" cy="845" r="15"/>
+    <circle cx="550" cy="845" r="5"/>
+    <line x1="550" y1="860" x2="550" y2="890"/>
+    <circle cx="1100" cy="850" r="12"/>
+    <circle cx="1100" cy="850" r="4"/>
+    <line x1="1100" y1="862" x2="1100" y2="890"/>
+
+    <!-- Butterfly -->
+    <ellipse cx="700" cy="500" rx="20" ry="12"/>
+    <ellipse cx="700" cy="480" rx="12" ry="18"/>
+    <ellipse cx="720" cy="500" rx="20" ry="12"/>
+    <ellipse cx="720" cy="480" rx="12" ry="18"/>
+  </g>
+</svg>
