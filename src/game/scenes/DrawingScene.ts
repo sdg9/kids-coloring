@@ -12,6 +12,9 @@ export class DrawingScene extends Scene {
     private brushManager!: BrushManager;
     private currentBrush: BrushType = BrushType.CRAYON;
     private currentColor: number = 0x000000;
+
+    private static readonly BRUSH_STORAGE_KEY = 'kids_drawing_brush';
+    private static readonly COLOR_STORAGE_KEY = 'kids_drawing_color';
     private isDrawing: boolean = false;
     private lastPointerX: number = 0;
     private lastPointerY: number = 0;
@@ -33,17 +36,31 @@ export class DrawingScene extends Scene {
     create(): void {
         this.input.setDefaultCursor('none');
 
+        // Restore saved tool and color
+        const savedBrush = localStorage.getItem(DrawingScene.BRUSH_STORAGE_KEY);
+        if (savedBrush !== null && Object.values(BrushType).includes(savedBrush as BrushType)) {
+            this.currentBrush = savedBrush as BrushType;
+        }
+        const savedColor = localStorage.getItem(DrawingScene.COLOR_STORAGE_KEY);
+        if (savedColor !== null) {
+            this.currentColor = parseInt(savedColor, 10);
+        }
+
         this.brushManager = new BrushManager(this);
 
         this.canvas = new DrawingCanvas(this, 1920, CANVAS_HEIGHT);
 
         new Toolbar(this, {
+            initialBrush: this.currentBrush,
+            initialColor: this.currentColor,
             onBrushChange: (brush) => {
                 this.currentBrush = brush;
+                localStorage.setItem(DrawingScene.BRUSH_STORAGE_KEY, brush);
                 this.drawCursor(this.input.activePointer.x, this.input.activePointer.y);
             },
             onColorChange: (color) => {
                 this.currentColor = color;
+                localStorage.setItem(DrawingScene.COLOR_STORAGE_KEY, String(color));
                 this.drawCursor(this.input.activePointer.x, this.input.activePointer.y);
             },
             onClear: () => {

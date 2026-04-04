@@ -7,10 +7,13 @@ export class ToolSelector {
     private buttons: UIButton[] = [];
     private selectedIndex: number = 0;
 
-    constructor(scene: Scene, x: number, y: number, onBrushChange: (brush: BrushType) => void) {
+    constructor(scene: Scene, x: number, y: number, onBrushChange: (brush: BrushType) => void, initialBrush?: BrushType) {
         this.container = scene.add.container(x, y);
 
         const brushTypes = [BrushType.CRAYON, BrushType.MARKER, BrushType.PENCIL, BrushType.FILL];
+        const initialIndex = initialBrush !== undefined ? brushTypes.indexOf(initialBrush) : 0;
+        this.selectedIndex = initialIndex >= 0 ? initialIndex : 0;
+
         const btnWidth = 90;
         const btnHeight = 80;
         const gap = 8;
@@ -27,7 +30,7 @@ export class ToolSelector {
                     onBrushChange(type);
                 },
             });
-            button.setHighlight(i === 0);
+            button.setHighlight(i === this.selectedIndex);
             this.buttons.push(button);
             this.container.add(button.container);
 

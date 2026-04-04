@@ -32,10 +32,21 @@ export class ColorPalette {
     private customColor: number = 0xff0000;
     private wheelOverlay: GameObjects.Container | null = null;
 
-    constructor(scene: Scene, x: number, y: number, onColorChange: (color: number) => void) {
+    constructor(scene: Scene, x: number, y: number, onColorChange: (color: number) => void, initialColor?: number) {
         this.scene = scene;
         this.onColorChange = onColorChange;
         this.container = scene.add.container(x, y);
+
+        if (initialColor !== undefined) {
+            const colorIndex = COLORS.findIndex(c => c.hex === initialColor);
+            if (colorIndex >= 0) {
+                this.selectedIndex = colorIndex;
+            } else {
+                // Custom color from wheel
+                this.selectedIndex = WHEEL_INDEX;
+                this.customColor = initialColor;
+            }
+        }
 
         const swatchSize = 50;
         const gap = 8;

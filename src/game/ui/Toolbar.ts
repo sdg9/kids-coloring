@@ -6,6 +6,8 @@ import { ToolSelector } from './ToolSelector';
 import { UIButton } from './UIButton';
 
 export interface ToolbarCallbacks {
+    initialBrush?: BrushType;
+    initialColor?: number;
     onBrushChange: (brush: BrushType) => void;
     onColorChange: (color: number) => void;
     onClear: () => void;
@@ -36,7 +38,7 @@ export class Toolbar {
         this.container.add(divider);
 
         // Tool selector (left side)
-        const toolSelector = new ToolSelector(scene, 80, Toolbar.HEIGHT / 2, callbacks.onBrushChange);
+        const toolSelector = new ToolSelector(scene, 80, Toolbar.HEIGHT / 2, callbacks.onBrushChange, callbacks.initialBrush);
         this.container.add(toolSelector.container);
 
         // Undo / Redo buttons
@@ -61,7 +63,7 @@ export class Toolbar {
         this.drawRedoIcon(scene, redoBtn.container);
 
         // Color palette (center)
-        const colorPalette = new ColorPalette(scene, 1050, Toolbar.HEIGHT / 2, callbacks.onColorChange);
+        const colorPalette = new ColorPalette(scene, 1050, Toolbar.HEIGHT / 2, callbacks.onColorChange, callbacks.initialColor);
         this.container.add(colorPalette.container);
 
         // Coloring pages button
