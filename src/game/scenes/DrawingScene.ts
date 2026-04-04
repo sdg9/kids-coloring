@@ -23,6 +23,8 @@ export class DrawingScene extends Scene {
     private cursorGraphics!: GameObjects.Graphics;
     private debugText!: GameObjects.Text;
     private gamepadNav!: GamepadNavigator;
+    private toolbar!: Toolbar;
+    private modalCursorActive: boolean = false;
 
     constructor() {
         super('DrawingScene');
@@ -51,7 +53,7 @@ export class DrawingScene extends Scene {
 
         this.canvas = new DrawingCanvas(this, 1920, CANVAS_HEIGHT);
 
-        const toolbar = new Toolbar(this, {
+        this.toolbar = new Toolbar(this, {
             initialBrush: this.currentBrush,
             initialColor: this.currentColor,
             onBrushChange: (brush) => {
@@ -95,11 +97,11 @@ export class DrawingScene extends Scene {
         this.debugText.setDepth(500);
 
         // Gamepad navigation (handles all controller input)
-        this.gamepadNav = new GamepadNavigator(this, toolbar, this.canvas, this.debugText);
+        this.gamepadNav = new GamepadNavigator(this, this.toolbar, this.canvas, this.debugText);
 
         this.input.on('pointerdown', (pointer: Phaser.Input.Pointer) => {
             if (pointer.y > CANVAS_HEIGHT) return;
-            if (toolbar.pageSelector.isOpen || toolbar.colorPalette.isWheelOpen) return;
+            if (this.toolbar.pageSelector.isOpen || this.toolbar.colorPalette.isWheelOpen) return;
 
             if (this.currentBrush === BrushType.FILL) {
                 this.canvas.fillAt(pointer.x, pointer.y, this.currentColor);
@@ -193,6 +195,17 @@ export class DrawingScene extends Scene {
         if (this.needsRender) {
             this.canvas.renderTexture.render();
             this.needsRender = false;
+        }
+
+        // Show system cursor when a modal is open, hide it when drawing
+        const modalOpen = this.toolbar.pageSelector.isOpen || this.toolbar.colorPalette.isWheelOpen;
+        if (modalOpen && !this.modalCursorActive) {
+            this.modalCursorActive = true;
+            this.input.setDefaultCursor('default');
+            this.cursorGraphics.clear();
+        } else if (!modalOpen && this.modalCursorActive) {
+            this.modalCursorActive = false;
+            this.input.setDefaultCursor('none');
         }
 
         this.gamepadNav.update();
