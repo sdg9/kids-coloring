@@ -66,15 +66,18 @@ export class DrawingScene extends Scene {
             },
             onClear: () => {
                 this.canvas.clear();
+                this.flashCanvas(0.7, 300);
             },
             onLoadPage: (url) => {
                 this.canvas.loadPage(url);
             },
             onUndo: () => {
                 this.canvas.undo();
+                this.flashCanvas(0.15, 200);
             },
             onRedo: () => {
                 this.canvas.redo();
+                this.flashCanvas(0.15, 200);
             },
         });
 
@@ -137,6 +140,21 @@ export class DrawingScene extends Scene {
                 this.isDrawing = false;
                 this.canvas.saveWithHistory();
             }
+        });
+    }
+
+    private flashCanvas(alpha: number, duration: number): void {
+        const flash = this.add.graphics();
+        flash.setDepth(50);
+        flash.fillStyle(0xffffff, 1);
+        flash.fillRect(0, 0, 1920, CANVAS_HEIGHT);
+        flash.setAlpha(alpha);
+        this.tweens.add({
+            targets: flash,
+            alpha: 0,
+            duration,
+            ease: 'Quad.easeOut',
+            onComplete: () => flash.destroy(),
         });
     }
 
