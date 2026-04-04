@@ -126,22 +126,52 @@ export class ColorPalette {
 
     private select(index: number): void {
         const swatchSize = 50;
-        // Deselect old
+
+        // Animate deselect old swatch
+        const oldSwatch = this.swatches[this.selectedIndex];
+        this.scene.tweens.killTweensOf(oldSwatch);
         if (this.selectedIndex < COLORS.length) {
-            this.drawSwatch(this.swatches[this.selectedIndex], COLORS[this.selectedIndex].hex, swatchSize, false);
+            this.drawSwatch(oldSwatch, COLORS[this.selectedIndex].hex, swatchSize, false);
         } else {
-            this.drawWheelSwatch(this.swatches[this.selectedIndex], swatchSize, false);
+            this.drawWheelSwatch(oldSwatch, swatchSize, false);
         }
+        this.scene.tweens.add({
+            targets: oldSwatch,
+            scaleX: 1,
+            scaleY: 1,
+            duration: 200,
+            ease: 'Quad.easeOut',
+        });
+
         // Select new
         this.selectedIndex = index;
+        const newSwatch = this.swatches[index];
+        this.scene.tweens.killTweensOf(newSwatch);
         if (index < COLORS.length) {
-            this.drawSwatch(this.swatches[index], COLORS[index].hex, swatchSize, true);
+            this.drawSwatch(newSwatch, COLORS[index].hex, swatchSize, true);
             this.onColorChange(COLORS[index].hex);
             this.hideWheelOverlay();
         } else {
-            this.drawWheelSwatch(this.swatches[index], swatchSize, true);
+            this.drawWheelSwatch(newSwatch, swatchSize, true);
             this.onColorChange(this.customColor);
         }
+        // Pop to 1.25 then settle at 1.15
+        this.scene.tweens.add({
+            targets: newSwatch,
+            scaleX: 1.25,
+            scaleY: 1.25,
+            duration: 150,
+            ease: 'Back.easeOut',
+            onComplete: () => {
+                this.scene.tweens.add({
+                    targets: newSwatch,
+                    scaleX: 1.15,
+                    scaleY: 1.15,
+                    duration: 100,
+                    ease: 'Quad.easeOut',
+                });
+            },
+        });
     }
 
     selectNext(): void {
@@ -173,14 +203,36 @@ export class ColorPalette {
     }
 
     private hideWheelOverlay(): void {
-        if (this.wheelOverlay) {
-            this.wheelOverlay.destroy();
-            this.wheelOverlay = null;
-        }
+        if (!this.wheelOverlay) return;
+        const overlay = this.wheelOverlay;
+        this.wheelOverlay = null;
+
+        const backdrop = overlay.getAt(0) as GameObjects.Graphics;
+        const panel = overlay.getAt(1) as GameObjects.Container;
+
+        this.scene.tweens.add({
+            targets: backdrop,
+            alpha: 0,
+            duration: 150,
+            ease: 'Quad.easeIn',
+        });
+        this.scene.tweens.add({
+            targets: panel,
+            scaleX: 0.85,
+            scaleY: 0.85,
+            alpha: 0,
+            duration: 150,
+            ease: 'Quad.easeIn',
+            onComplete: () => {
+                overlay.destroy();
+            },
+        });
     }
 
     private showWheelOverlay(): void {
-        this.hideWheelOverlay();
+        if (this.wheelOverlay) {
+            this.hideWheelOverlay();
+        }
 
         const overlay = this.scene.add.container(960, 480);
         overlay.setDepth(250);
@@ -195,15 +247,22 @@ export class ColorPalette {
             Phaser.Geom.Rectangle.Contains
         );
         backdrop.on('pointerdown', () => this.hideWheelOverlay());
+        backdrop.setAlpha(0);
         overlay.add(backdrop);
 
-        // Panel
+        // Panel sub-container for scale/fade animation
+        const panelContainer = this.scene.add.container(0, 0);
+        panelContainer.setAlpha(0);
+        panelContainer.setScale(0.85);
+        overlay.add(panelContainer);
+
+        // Panel background
         const panel = this.scene.add.graphics();
         panel.fillStyle(0x444444, 0.95);
         panel.fillRoundedRect(-220, -220, 440, 440, 16);
         panel.lineStyle(2, 0x666666, 1);
         panel.strokeRoundedRect(-220, -220, 440, 440, 16);
-        overlay.add(panel);
+        panelContainer.add(panel);
 
         // Color wheel
         const wheelRadius = 160;
@@ -231,11 +290,9 @@ export class ColorPalette {
             }
         }
 
-        // White center for lightness
         wheelGraphics.fillStyle(0xffffff, 0.3);
         wheelGraphics.fillCircle(0, 0, wheelRadius * 0.15);
-
-        overlay.add(wheelGraphics);
+        panelContainer.add(wheelGraphics);
 
         // Brightness strip below wheel
         const stripY = 185;
@@ -251,9 +308,9 @@ export class ColorPalette {
         }
         stripGraphics.lineStyle(1.5, 0x888888, 0.8);
         stripGraphics.strokeRect(-stripW / 2, stripY, stripW, stripH);
-        overlay.add(stripGraphics);
+        panelContainer.add(stripGraphics);
 
-        // Make strip interactive for brightness
+        // Strip interactive
         const stripHitArea = new Phaser.Geom.Rectangle(-stripW / 2, stripY, stripW, stripH);
         stripGraphics.setInteractive(stripHitArea, Phaser.Geom.Rectangle.Contains);
         stripGraphics.on('pointerdown', (pointer: Phaser.Input.Pointer) => {
@@ -264,7 +321,7 @@ export class ColorPalette {
             this.hideWheelOverlay();
         });
 
-        // Make wheel interactive
+        // Wheel interactive
         const wheelHitArea = new Phaser.Geom.Circle(0, 0, wheelRadius);
         wheelGraphics.setInteractive(wheelHitArea, Phaser.Geom.Circle.Contains);
         wheelGraphics.on('pointerdown', (pointer: Phaser.Input.Pointer) => {
@@ -278,6 +335,22 @@ export class ColorPalette {
             this.customColor = hslToHex(hue, saturation, lightness);
             this.onColorChange(this.customColor);
             this.hideWheelOverlay();
+        });
+
+        // Animate in
+        this.scene.tweens.add({
+            targets: backdrop,
+            alpha: 1,
+            duration: 200,
+            ease: 'Quad.easeOut',
+        });
+        this.scene.tweens.add({
+            targets: panelContainer,
+            scaleX: 1,
+            scaleY: 1,
+            alpha: 1,
+            duration: 250,
+            ease: 'Back.easeOut',
         });
     }
 }
