@@ -47,8 +47,8 @@ export class ColoringPageSelector {
         this.panelContainer = scene.add.container(960, 480);
         this.container.add(this.panelContainer);
 
-        // Page items container — offset to compensate for panelContainer's position
-        this.pageContainer = scene.add.container(-960, -480);
+        // Page items container — child of panelContainer, coordinates relative to center
+        this.pageContainer = scene.add.container(0, 0);
 
         this.build();
     }
