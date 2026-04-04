@@ -1,0 +1,72 @@
+{
+    "name": "kids-drawing",
+    "description": "A Phaser 4 drawing game for kids.",
+    "version": "1.0.0",
+    "main": "electron/main.js",
+    "author": {
+        "name": "Steven",
+        "email": "steven@example.com"
+    },
+    "license": "MIT",
+    "scripts": {
+        "dev": "vite --config vite/config.dev.mjs",
+        "build": "vite build --config vite/config.prod.mjs",
+        "test": "vitest",
+        "test:run": "vitest run",
+        "electron": "electron .",
+        "electron:build": "pnpm build && electron-builder",
+        "electron:build:mac": "pnpm build && electron-builder --mac",
+        "electron:build:win": "pnpm build && electron-builder --win",
+        "electron:build:linux": "pnpm build && electron-builder --linux",
+        "electron:build:steamdeck": "pnpm build && electron-builder --linux --x64",
+        "deploy:steamdeck": "pnpm electron:build:steamdeck && ./deploy-steamdeck.sh"
+    },
+    "devDependencies": {
+        "electron": "^39.2.6",
+        "electron-builder": "^26.0.12",
+        "playwright": "^1.59.1",
+        "typescript": "~5.7.2",
+        "vite": "^6.3.1",
+        "vite-plugin-qrcode": "^0.3.0",
+        "vitest": "^4.0.15"
+    },
+    "dependencies": {
+        "phaser": "^4.0.0-rc.5",
+        "terser": "^5.39.0"
+    },
+    "build": {
+        "appId": "com.kids-drawing.app",
+        "productName": "Kids Drawing",
+        "directories": {
+            "output": "release"
+        },
+        "files": [
+            "dist/**/*",
+            "electron/**/*"
+        ],
+        "mac": {
+            "category": "public.app-category.games",
+            "target": [
+                "dmg",
+                "zip"
+            ]
+        },
+        "win": {
+            "target": [
+                "nsis",
+                "portable"
+            ]
+        },
+        "linux": {
+            "target": [
+                "AppImage",
+                "deb"
+            ]
+        }
+    },
+    "pnpm": {
+        "onlyBuiltDependencies": [
+            "electron"
+        ]
+    }
+}
