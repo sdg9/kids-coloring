@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 960" width="1920" height="960">
+  <g stroke="black" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Body -->
+    <ellipse cx="900" cy="520" rx="320" ry="200"/>
+    <!-- Neck -->
+    <path d="M650,400 Q580,300 560,200 Q550,150 600,130"/>
+    <path d="M720,380 Q680,300 670,200 Q665,160 700,140"/>
+    <!-- Head -->
+    <ellipse cx="650" cy="120" rx="80" ry="50"/>
+    <!-- Eye -->
+    <circle cx="610" cy="110" r="15"/>
+    <circle cx="606" cy="107" r="6"/>
+    <!-- Mouth -->
+    <line x1="575" y1="140" x2="580" y2="130"/>
+    <!-- Nostril -->
+    <circle cx="580" cy="115" r="5"/>
+    <!-- Smile -->
+    <path d="M590,140 Q620,160 660,140"/>
+    <!-- Back spikes -->
+    <path d="M700,340 L720,280 L760,340"/>
+    <path d="M780,320 L810,250 L850,320"/>
+    <path d="M860,330 L890,270 L920,335"/>
+    <path d="M930,350 L955,300 L980,355"/>
+    <path d="M990,380 L1010,340 L1030,385"/>
+    <!-- Tail -->
+    <path d="M1200,440 Q1350,380 1450,300 Q1480,280 1500,300"/>
+    <path d="M1200,540 Q1330,500 1420,420 Q1460,390 1490,400"/>
+    <!-- Tail tip -->
+    <path d="M1500,300 Q1520,340 1490,400"/>
+    <!-- Tail spikes -->
+    <path d="M1280,420 L1300,380 L1330,430"/>
+    <path d="M1380,380 L1400,340 L1430,395"/>
+    <!-- Front leg -->
+    <rect x="700" y="680" width="60" height="140" rx="15"/>
+    <!-- Back leg -->
+    <rect x="1020" y="680" width="70" height="140" rx="15"/>
+    <!-- Front foot -->
+    <ellipse cx="730" cy="830" rx="45" ry="20"/>
+    <!-- Back foot -->
+    <ellipse cx="1055" cy="830" rx="50" ry="20"/>
+    <!-- Tummy line -->
+    <path d="M680,550 Q800,650 1050,600"/>
+    <!-- Ground -->
+    <line x1="100" y1="850" x2="1820" y2="850"/>
+    <!-- Small plants -->
+    <path d="M200,850 Q210,800 230,820 Q240,790 260,830 Q270,810 280,850"/>
+    <path d="M1600,850 Q1610,810 1630,830 Q1640,800 1660,840 Q1670,820 1680,850"/>
+    <!-- Rocks -->
+    <ellipse cx="400" cy="840" rx="40" ry="20"/>
+    <ellipse cx="1450" cy="845" rx="30" ry="15"/>
+    <!-- Cloud -->
+    <circle cx="1400" cy="150" r="45"/>
+    <circle cx="1455" cy="135" r="55"/>
+    <circle cx="1520" cy="150" r="45"/>
+    <!-- Volcano in background -->
+    <path d="M1650,850 L1720,500 L1800,850"/>
+    <path d="M1700,520 Q1720,480 1740,520"/>
+  </g>
+</svg>

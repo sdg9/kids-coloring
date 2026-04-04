@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 960" width="1920" height="960">
+  <g stroke="black" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Rocket body -->
+    <path d="M900,150 Q960,120 1020,150 L1050,650 Q960,680 870,650 Z"/>
+    <!-- Nose cone -->
+    <path d="M900,150 Q960,50 1020,150"/>
+    <!-- Window -->
+    <circle cx="960" cy="300" r="60"/>
+    <circle cx="960" cy="300" r="45"/>
+    <!-- Stripe -->
+    <line x1="870" y1="450" x2="1050" y2="450"/>
+    <line x1="870" y1="490" x2="1050" y2="490"/>
+    <!-- Left fin -->
+    <path d="M870,550 L770,700 L870,650"/>
+    <!-- Right fin -->
+    <path d="M1050,550 L1150,700 L1050,650"/>
+    <!-- Center fin -->
+    <path d="M930,650 L960,730 L990,650"/>
+    <!-- Flame -->
+    <path d="M900,680 Q880,780 960,850 Q1040,780 1020,680"/>
+    <path d="M920,680 Q910,760 960,810 Q1010,760 1000,680"/>
+    <!-- Stars -->
+    <path d="M300,200 L310,230 L340,230 L315,250 L325,280 L300,260 L275,280 L285,250 L260,230 L290,230 Z"/>
+    <path d="M1600,300 L1608,325 L1633,325 L1613,340 L1621,365 L1600,350 L1579,365 L1587,340 L1567,325 L1592,325 Z"/>
+    <path d="M500,600 L506,618 L525,618 L510,630 L516,648 L500,638 L484,648 L490,630 L475,618 L494,618 Z"/>
+    <path d="M1400,150 L1406,168 L1425,168 L1410,180 L1416,198 L1400,188 L1384,198 L1390,180 L1375,168 L1394,168 Z"/>
+    <!-- Planet with ring -->
+    <circle cx="1550" cy="650" r="80"/>
+    <ellipse cx="1550" cy="650" rx="130" ry="30"/>
+    <!-- Moon -->
+    <circle cx="350" cy="450" r="50"/>
+    <circle cx="330" cy="435" r="12"/>
+    <circle cx="365" cy="460" r="8"/>
+    <circle cx="345" cy="470" r="6"/>
+    <!-- Small stars (dots) -->
+    <circle cx="200" cy="100" r="3"/>
+    <circle cx="700" cy="80" r="3"/>
+    <circle cx="1200" cy="120" r="3"/>
+    <circle cx="1700" cy="80" r="3"/>
+    <circle cx="450" cy="300" r="3"/>
+    <circle cx="1300" cy="500" r="3"/>
+    <circle cx="200" cy="700" r="3"/>
+    <circle cx="1750" cy="450" r="3"/>
+  </g>
+</svg>

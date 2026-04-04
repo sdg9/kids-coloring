@@ -2,6 +2,7 @@ export enum BrushType {
     CRAYON = 'crayon',
     MARKER = 'marker',
     PENCIL = 'pencil',
+    FILL = 'fill',
 }
 
 export interface BrushConfig {
@@ -41,5 +42,14 @@ export const BRUSH_CONFIGS: Record<BrushType, BrushConfig> = {
         spacing: 0.4,
         jitter: 1.5,
         textureVariants: 3,
+    },
+    [BrushType.FILL]: {
+        type: BrushType.FILL,
+        label: 'Fill',
+        radius: 0,
+        alpha: 1,
+        spacing: 0,
+        jitter: 0,
+        textureVariants: 0,
     },
 };

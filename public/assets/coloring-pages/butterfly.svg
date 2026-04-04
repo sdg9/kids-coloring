@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 960" width="1920" height="960">
+  <g stroke="black" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Body -->
+    <ellipse cx="960" cy="480" rx="25" ry="160"/>
+    <!-- Head -->
+    <circle cx="960" cy="290" r="35"/>
+    <!-- Eyes -->
+    <circle cx="948" cy="283" r="8"/>
+    <circle cx="972" cy="283" r="8"/>
+    <!-- Smile -->
+    <path d="M948,300 Q960,315 972,300"/>
+    <!-- Antennae -->
+    <path d="M945,260 Q900,180 870,160"/>
+    <circle cx="865" cy="155" r="10"/>
+    <path d="M975,260 Q1020,180 1050,160"/>
+    <circle cx="1055" cy="155" r="10"/>
+    <!-- Left upper wing -->
+    <path d="M935,380 Q700,200 700,380 Q700,450 935,440"/>
+    <!-- Left lower wing -->
+    <path d="M935,460 Q720,480 720,580 Q720,700 935,560"/>
+    <!-- Right upper wing -->
+    <path d="M985,380 Q1220,200 1220,380 Q1220,450 985,440"/>
+    <!-- Right lower wing -->
+    <path d="M985,460 Q1200,480 1200,580 Q1200,700 985,560"/>
+    <!-- Wing decorations - left upper -->
+    <circle cx="790" cy="350" r="40"/>
+    <circle cx="790" cy="350" r="20"/>
+    <!-- Wing decorations - right upper -->
+    <circle cx="1130" cy="350" r="40"/>
+    <circle cx="1130" cy="350" r="20"/>
+    <!-- Wing decorations - left lower -->
+    <circle cx="790" cy="560" r="30"/>
+    <circle cx="790" cy="560" r="15"/>
+    <!-- Wing decorations - right lower -->
+    <circle cx="1130" cy="560" r="30"/>
+    <circle cx="1130" cy="560" r="15"/>
+    <!-- Flowers on ground -->
+    <circle cx="300" cy="820" r="25"/>
+    <circle cx="278" cy="798" r="15"/>
+    <circle cx="322" cy="798" r="15"/>
+    <circle cx="278" cy="842" r="15"/>
+    <circle cx="322" cy="842" r="15"/>
+    <line x1="300" y1="845" x2="300" y2="920"/>
+    <path d="M280,890 Q300,870 320,890"/>
+    <circle cx="1600" cy="800" r="25"/>
+    <circle cx="1578" cy="778" r="15"/>
+    <circle cx="1622" cy="778" r="15"/>
+    <circle cx="1578" cy="822" r="15"/>
+    <circle cx="1622" cy="822" r="15"/>
+    <line x1="1600" y1="825" x2="1600" y2="920"/>
+    <path d="M1580,880 Q1600,860 1620,880"/>
+    <!-- Grass -->
+    <path d="M100,920 L120,880 L140,920"/>
+    <path d="M500,920 L520,890 L540,920"/>
+    <path d="M900" y1="920" x2="920" y2="885"/>
+    <path d="M1300,920 L1320,880 L1340,920"/>
+    <path d="M1800,920 L1820,890 L1840,920"/>
+  </g>
+</svg>
