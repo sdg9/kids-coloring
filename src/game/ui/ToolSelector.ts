@@ -4,12 +4,14 @@ import { UIButton } from './UIButton';
 
 export class ToolSelector {
     readonly container: GameObjects.Container;
+    private scene: Scene;
     private buttons: UIButton[] = [];
     private selectedIndex: number = 0;
     private brushTypes: BrushType[];
     private onBrushChange: (brush: BrushType) => void;
 
     constructor(scene: Scene, x: number, y: number, onBrushChange: (brush: BrushType) => void, initialBrush?: BrushType) {
+        this.scene = scene;
         this.onBrushChange = onBrushChange;
         this.container = scene.add.container(x, y);
 
@@ -124,6 +126,19 @@ export class ToolSelector {
         this.buttons[this.selectedIndex].setHighlight(false);
         this.selectedIndex = index;
         this.buttons[index].setHighlight(true);
+
+        // Pop-scale animation on the newly selected button
+        const btn = this.buttons[index].container;
+        this.scene.tweens.killTweensOf(btn);
+        this.scene.tweens.add({
+            targets: btn,
+            scaleX: 1.15,
+            scaleY: 1.15,
+            duration: 150,
+            ease: 'Back.easeOut',
+            yoyo: true,
+            yoyoDelay: 0,
+        });
     }
 
     selectNext(): void {
