@@ -15,8 +15,10 @@ export class UIButton {
     readonly container: GameObjects.Container;
     private bg: GameObjects.Graphics;
     private options: UIButtonOptions;
+    private scene: Scene;
 
     constructor(scene: Scene, x: number, y: number, options: UIButtonOptions) {
+        this.scene = scene;
         this.options = options;
         this.container = scene.add.container(x, y);
 
@@ -45,16 +47,37 @@ export class UIButton {
         this.container.setInteractive(hitArea, Phaser.Geom.Rectangle.Contains);
 
         this.container.on('pointerdown', () => {
-            this.container.setScale(0.95);
+            this.scene.tweens.killTweensOf(this.container);
+            this.scene.tweens.add({
+                targets: this.container,
+                scaleX: 0.9,
+                scaleY: 0.9,
+                duration: 80,
+                ease: 'Quad.easeOut',
+            });
             options.onPress();
         });
 
         this.container.on('pointerup', () => {
-            this.container.setScale(1);
+            this.scene.tweens.killTweensOf(this.container);
+            this.scene.tweens.add({
+                targets: this.container,
+                scaleX: 1.0,
+                scaleY: 1.0,
+                duration: 250,
+                ease: 'Back.easeOut',
+            });
         });
 
         this.container.on('pointerout', () => {
-            this.container.setScale(1);
+            this.scene.tweens.killTweensOf(this.container);
+            this.scene.tweens.add({
+                targets: this.container,
+                scaleX: 1.0,
+                scaleY: 1.0,
+                duration: 250,
+                ease: 'Back.easeOut',
+            });
         });
     }
 
