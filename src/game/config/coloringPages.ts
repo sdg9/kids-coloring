@@ -87,4 +87,7 @@ export const COLORING_PAGES: ColoringPage[] = [
     { name: 'Hippo', url: './assets/coloring-pages/hippo.svg' },
     { name: 'Snail', url: './assets/coloring-pages/snail.svg' },
     { name: 'Caterpillar', url: './assets/coloring-pages/caterpillar.svg' },
+    // Minecraft
+    { name: 'Minecraft Block', url: './assets/coloring-pages/minecraft-block.svg' },
+    { name: 'Minecraft World', url: './assets/coloring-pages/minecraft-world.svg' },
 ];

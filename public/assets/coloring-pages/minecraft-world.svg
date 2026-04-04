@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 960" width="1920" height="960">
+  <g stroke="black" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Sky - blocky sun -->
+    <rect x="1500" y="60" width="120" height="120"/>
+    <rect x="1520" y="80" width="80" height="80"/>
+    <!-- Sun rays (blocky) -->
+    <rect x="1545" y="20" width="30" height="40"/>
+    <rect x="1545" y="180" width="30" height="40"/>
+    <rect x="1460" y="105" width="40" height="30"/>
+    <rect x="1620" y="105" width="40" height="30"/>
+    <!-- Blocky cloud -->
+    <rect x="300" y="80" width="80" height="40"/>
+    <rect x="260" y="120" width="160" height="40"/>
+    <rect x="700" y="100" width="60" height="30"/>
+    <rect x="670" y="130" width="120" height="30"/>
+    <!-- Background mountains (stepped/blocky) -->
+    <path d="M0,500 L0,400 L80,400 L80,350 L160,350 L160,300 L240,300 L240,250 L320,250 L320,200 L400,200 L400,250 L480,250 L480,300 L560,300 L560,350 L640,350 L640,400 L720,400 L720,350 L800,350 L800,300 L880,300 L880,250 L960,250 L960,300 L1040,300 L1040,350 L1120,350 L1120,400 L1200,400 L1200,350 L1280,350 L1280,300 L1360,300 L1360,350 L1440,350 L1440,400 L1520,400 L1520,450 L1600,450 L1600,500 L1680,500 L1680,450 L1760,450 L1760,500 L1920,500"/>
+    <!-- Ground layer (grass blocks) -->
+    <line x1="0" y1="600" x2="1920" y2="600"/>
+    <!-- Grass block grid -->
+    <line x1="80" y1="500" x2="80" y2="600"/>
+    <line x1="160" y1="500" x2="160" y2="600"/>
+    <line x1="240" y1="500" x2="240" y2="600"/>
+    <line x1="320" y1="500" x2="320" y2="600"/>
+    <line x1="400" y1="500" x2="400" y2="600"/>
+    <line x1="480" y1="500" x2="480" y2="600"/>
+    <line x1="560" y1="500" x2="560" y2="600"/>
+    <line x1="640" y1="500" x2="640" y2="600"/>
+    <line x1="720" y1="500" x2="720" y2="600"/>
+    <line x1="800" y1="500" x2="800" y2="600"/>
+    <line x1="880" y1="500" x2="880" y2="600"/>
+    <line x1="960" y1="500" x2="960" y2="600"/>
+    <line x1="1040" y1="500" x2="1040" y2="600"/>
+    <line x1="1120" y1="500" x2="1120" y2="600"/>
+    <line x1="1200" y1="500" x2="1200" y2="600"/>
+    <line x1="1280" y1="500" x2="1280" y2="600"/>
+    <line x1="1360" y1="500" x2="1360" y2="600"/>
+    <line x1="1440" y1="500" x2="1440" y2="600"/>
+    <line x1="1520" y1="500" x2="1520" y2="600"/>
+    <line x1="1600" y1="500" x2="1600" y2="600"/>
+    <line x1="1680" y1="500" x2="1680" y2="600"/>
+    <line x1="1760" y1="500" x2="1760" y2="600"/>
+    <line x1="1840" y1="500" x2="1840" y2="600"/>
+    <line x1="0" y1="550" x2="1920" y2="550"/>
+    <!-- Dirt layer -->
+    <line x1="0" y1="680" x2="1920" y2="680"/>
+    <line x1="0" y1="760" x2="1920" y2="760"/>
+    <line x1="0" y1="840" x2="1920" y2="840"/>
+    <!-- Dirt vertical lines -->
+    <line x1="80" y1="600" x2="80" y2="960"/>
+    <line x1="160" y1="600" x2="160" y2="960"/>
+    <line x1="240" y1="600" x2="240" y2="960"/>
+    <line x1="320" y1="600" x2="320" y2="960"/>
+    <line x1="400" y1="600" x2="400" y2="960"/>
+    <line x1="480" y1="600" x2="480" y2="960"/>
+    <line x1="560" y1="600" x2="560" y2="960"/>
+    <line x1="640" y1="600" x2="640" y2="960"/>
+    <line x1="720" y1="600" x2="720" y2="960"/>
+    <line x1="800" y1="600" x2="800" y2="960"/>
+    <line x1="880" y1="600" x2="880" y2="960"/>
+    <line x1="960" y1="600" x2="960" y2="960"/>
+    <line x1="1040" y1="600" x2="1040" y2="960"/>
+    <line x1="1120" y1="600" x2="1120" y2="960"/>
+    <line x1="1200" y1="600" x2="1200" y2="960"/>
+    <line x1="1280" y1="600" x2="1280" y2="960"/>
+    <line x1="1360" y1="600" x2="1360" y2="960"/>
+    <line x1="1440" y1="600" x2="1440" y2="960"/>
+    <line x1="1520" y1="600" x2="1520" y2="960"/>
+    <line x1="1600" y1="600" x2="1600" y2="960"/>
+    <line x1="1680" y1="600" x2="1680" y2="960"/>
+    <line x1="1760" y1="600" x2="1760" y2="960"/>
+    <line x1="1840" y1="600" x2="1840" y2="960"/>
+    <!-- Tree (blocky) -->
+    <rect x="280" y="340" width="80" height="160"/>
+    <!-- Tree leaves (blocky) -->
+    <rect x="200" y="180" width="240" height="80"/>
+    <rect x="240" y="100" width="160" height="80"/>
+    <rect x="240" y="260" width="160" height="80"/>
+    <!-- Second tree -->
+    <rect x="1160" y="360" width="80" height="140"/>
+    <rect x="1080" y="200" width="240" height="80"/>
+    <rect x="1120" y="120" width="160" height="80"/>
+    <rect x="1120" y="280" width="160" height="80"/>
+    <!-- Creeper face (on a block standing on ground) -->
+    <rect x="700" y="340" width="160" height="160"/>
+    <!-- Creeper eyes -->
+    <rect x="720" y="360" width="40" height="40"/>
+    <rect x="800" y="360" width="40" height="40"/>
+    <!-- Creeper mouth -->
+    <rect x="750" y="420" width="20" height="60"/>
+    <rect x="730" y="440" width="60" height="40"/>
+    <!-- Ore block underground -->
+    <rect x="480" y="680" width="80" height="80"/>
+    <rect x="500" y="700" width="20" height="20"/>
+    <rect x="530" y="710" width="15" height="15"/>
+    <rect x="510" y="730" width="18" height="18"/>
+    <!-- Another ore -->
+    <rect x="1280" y="760" width="80" height="80"/>
+    <rect x="1300" y="780" width="20" height="20"/>
+    <rect x="1330" y="790" width="15" height="15"/>
+    <rect x="1310" y="810" width="18" height="18"/>
+    <!-- Pig (blocky) -->
+    <rect x="920" y="440" width="80" height="60"/>
+    <rect x="900" y="430" width="40" height="40"/>
+    <!-- Pig snout -->
+    <rect x="895" y="445" width="16" height="12"/>
+    <!-- Pig eyes -->
+    <rect x="905" y="436" width="8" height="8"/>
+    <rect x="922" y="436" width="8" height="8"/>
+    <!-- Pig legs -->
+    <rect x="925" y="500" width="12" height="20"/>
+    <rect x="945" y="500" width="12" height="20"/>
+    <rect x="965" y="500" width="12" height="20"/>
+    <rect x="985" y="500" width="12" height="20"/>
+    <!-- Sword stuck in ground -->
+    <rect x="1460" y="380" width="10" height="120"/>
+    <rect x="1445" y="420" width="40" height="10"/>
+    <rect x="1455" y="430" width="20" height="15"/>
+  </g>
+</svg>
