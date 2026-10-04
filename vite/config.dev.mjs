@@ -14,7 +14,8 @@ export default defineConfig({
     },
     server: {
         port: 8080,
-        host: true
+        host: true,
+        allowedHosts: ['game2.stevengoff.dev']
     },
     plugins: [qrcode()]
 });
